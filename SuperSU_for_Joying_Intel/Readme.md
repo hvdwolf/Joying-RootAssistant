@@ -17,10 +17,10 @@ All credits go to Chainfire for his SuperSU application. This installation scrip
  
 
 With that disclaimer behind us we can now continue. Note that even if things go wrong and your unit will not work correctly again, you can very easily fix that by simply flashing your unit again with the (latest) [Joying ROM](https://www.carjoying.com/Joying-blog/59.html).</br>
-One final remark to make: Note that 999 out of 1000 apps **don't need root access**. Even more: due to the access rights you earlier gave them during install, it might even result in security issues on your unit as those apps might have "leaks" that are otherwise covered by the Andorid system itself, but not anymore when rooted.
+One final remark to make: Note that 999 out of 1000 apps **don't need root access**. Even more: due to the access rights you earlier gave them during install, it might even result in security issues on your unit as those apps might have "leaks" that are otherwise covered by the Android system itself, but not anymore with the apk now rooted.
 
 **Requirements:**</br>
-  * `adb` - For windows it has been packaged in this repository. On Linux or one of the other systems you need to install it using your favorite package manager (like for Ubuntu/Debian likes: `sudo apt-get install adb`)or install it via the Android SDK (as can be done for windows as well).
+  * `adb` - For windows it has been packaged in this repository inside this specific `SuperSU_for_Joying_Intel` folder. On Linux or one of the other systems you need to install it using your favorite package manager (like for Ubuntu/Debian likes: `sudo apt-get install adb`)or install it via the Android SDK (as can be done for windows as well).
   * You need either a Windows Laptop/PC or a Linux/\*BSD/MacOS X/Solaris laptop/PC that is connected to the same WiFi network as your Head Unit. You can find the ip-address of your head unit via `Settings -> WiFi; vertical "triple-dot" menu in top-right; Advanced`. 
 
 **How-To install:**</br>
@@ -36,5 +36,5 @@ One final remark to make: Note that 999 out of 1000 apps **don't need root acces
 6. Reboot your Head Unit.
 7. DONE! ENJOY!
 
-You should now have the SuperSU application working with modified SEpolicy settings. This will allow you to give other apps root access as well.
+You should now have the SuperSU application working with modified SELinux policy settings. This will allow you to give other apps root access as well.
 
