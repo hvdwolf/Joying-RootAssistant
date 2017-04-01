@@ -1,4 +1,4 @@
-@echo off
+#!/bin/bash
 
 
 # ipaddress given?

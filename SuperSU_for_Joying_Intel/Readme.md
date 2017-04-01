@@ -30,8 +30,8 @@ One final remark to make: Note that 999 out of 1000 apps **don't need root acces
     * On Linux likes: Open a terminal.
 3. Change to the folder where you unzipped the files or downloaded the repository, and change into the `SuperSU_for_Joying_Intel` folder where the `copy_install.sh` and `copy_install.bat` are located.
 4. 
-    * On Windows: Run the install.bat script with the IP address of your Head Unit as a parameter: `install.bat 192.168.178.50` (for example)
-    * On linux: Run the install.sh script with the IP address of your Head Unit as a parameter:`./install.sh 192.168.178.50` (for example)
+    * On Windows: Run the copy_install.bat script with the IP address of your Head Unit as a parameter: `copy_install.bat 192.168.178.50` (for example)
+    * On linux: Run the copy_install.sh script with the IP address of your Head Unit as a parameter:`./copy_install.sh 192.168.178.50` (for example)
 5. Wait until the script finishes.
 6. Reboot your Head Unit.
 7. DONE! ENJOY!
