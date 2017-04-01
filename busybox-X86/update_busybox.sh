@@ -25,4 +25,4 @@ adb kill-server
 
 
 
-echo -e "\n\nReboot your Head Unit NOW!\n\n"
+echo -e "\n\nIt is not necessary to reboot your device now, but it will not hurt.\n\n"
