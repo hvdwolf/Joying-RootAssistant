@@ -8,7 +8,7 @@ Another good version of busybox can be found on Jared Rummler's [github pages](h
 
 
 **Requirements:**</br>
-  * `adb` - For windows it has been packaged in this repository in the win-adb folder. On Linux or one of the other systems you need to install it using your favorite package manager (like for Ubuntu/Debian likes: `sudo apt-get install adb`)or install it via the Android SDK (as can be done for windows as well).
+  * `adb` - For windows it has been packaged in this repository in the win-adb folder and it will be used from there. On Linux or one of the other systems you need to install it using your favorite package manager (like for Ubuntu/Debian likes: `sudo apt-get install adb`)or install it via the Android SDK (as can be done for windows as well).
   * You need either a Windows Laptop/PC or a Linux/\*BSD/MacOS X/Solaris laptop/PC that is connected to the same WiFi network as your Head Unit. You can find the ip-address of your head unit via `Settings -> WiFi; vertical "triple-dot" menu in top-right; Advanced`. 
 
 **How-To install:**</br>
