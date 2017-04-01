@@ -2,7 +2,7 @@
 
 WARNING: Only for joying Intel 3GR head units.
 
-Note: Windows users can better download the zip. For some reason the adb.exe gives and "access refused" error when download the repositiry using git.
+Note: Windows users can better download the zip. For some reason the adb.exe gives and "access refused" error when downloading the repository using git.
 
 Currently this repository only contains the SuperSU install scripts and the busybox upgrade scripts. 
 
