@@ -19,23 +19,23 @@ if "%1"=="" (
 )
 
 REM Connect to android unit
-adb kill-server
-adb connect %1
+..\wina-adb\adb kill-server
+..\wina-adb\adb connect %1
 timeout 3 > NUL
 
 
 REM mount system as read-write and update dpi in build.prop
-adb shell "su -c mount -o remount,rw /system"
-adb shell "su -c cp /system/bin/busybox /system/bin/busybox/busybox.org"
-adb push ./busybox /system/bin/busybox
-adb shell "su -c chmod 06755 /system/bin/busybox"
-adb shell "su -c mount -o ro,remount /system"
+..\wina-adb\adb shell "su -c mount -o remount,rw /system"
+..\wina-adb\adb shell "su -c cp /system/bin/busybox /system/bin/busybox/busybox.org"
+..\wina-adb\adb push ./busybox /system/bin/busybox
+..\wina-adb\adb shell "su -c chmod 06755 /system/bin/busybox"
+..\wina-adb\adb shell "su -c mount -o ro,remount /system"
 
-adb kill-server
+..\wina-adb\adb kill-server
 
 
 echo.
-echo "You need to reboot your device now."
+echo "It is not necessary to reboot your device now, but it will not hurt."
 echo.
 
 :END
