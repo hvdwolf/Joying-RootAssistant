@@ -4,7 +4,7 @@ The current versions of the Joying Intel Sofia 4GR headunits come with a buggy 1
 
 busybox details/explanations/etc. can be found on [busybox.net](https://busybox.net/).
 
-Another good version of busybox can be found on Jared Rummler's [github pages](https://github.com/jrummyapps/BusyBox) __(note that his apk is a userfriendly "shell" around the busybox binary")__.
+Another good version of busybox can be found on Jared Rummler's [github pages](https://github.com/jrummyapps/BusyBox) (note that his apk is a userfriendly "shell" around the busybox binary").
 
 
 **Requirements:**</br>
@@ -16,7 +16,7 @@ Another good version of busybox can be found on Jared Rummler's [github pages](h
 2. 
     * On Windows: Run CMD.exe as Administrator. 
     * On Linux likes: Open a terminal.
-3. Change to the folder where you unzipped the files or downloaded the repository, and change into the `busybox` folder where the `update_busybox.sh` and `update_busybox.bat` are located. Copy all the file from the win-adb folder into this `busybox` folder.
+3. Change to the folder where you unzipped the files or downloaded the repository, and change into the `busybox_X86` folder where the `update_busybox.sh` and `update_busybox.bat` are located.
 4. 
     * On Windows: Run the update_busybox.bat script with the IP address of your Head Unit as a parameter: `update_busybox.bat 192.168.178.50` (for example)
     * On linux: Run the update_busybox.sh script with the IP address of your Head Unit as a parameter:`./update_busybox.sh 192.168.178.50` (for example)
