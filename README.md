@@ -15,4 +15,4 @@ The busybox version on the Joying head units is relativily old and buggy. The sc
 
 
 
-This repo should grow to containing sets of scripts and an apk to simplify adding/removing/modifying apks on your Joying unit.
+This repo should grow in time to contain sets of scripts and an apk to simplify adding/removing/modifying apks on your Joying unit.
