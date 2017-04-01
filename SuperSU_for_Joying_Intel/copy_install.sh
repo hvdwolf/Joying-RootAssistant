@@ -5,7 +5,7 @@
 if [ "$1" = "" ]
 then
         echo "Provide IP Address to connect to for adb"
-        echo "for example:  install 10.0.0.52"
+        echo "for example:  ./copy_install.sh 192.168.178.52"
         exit
 fi
 set -x
