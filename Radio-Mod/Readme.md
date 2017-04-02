@@ -37,8 +37,16 @@ All have the modified Station name (PS text) and modified buttons.
 5. Wait until the script finishes.
 6. Done. You can reboot but it is not neccessary.
 
-Click the thumbnails for a full-size view.
-![BLUE_WHITE](BLUE_WHITE/BLUE_WHITE.jpg "Blue_White version") | ![RED_WHITE](RED_WHITE/RED_WHITE.jpg "Red_White version") | ![RED](RED/RED.jpg "Red version")
 
 **Note!**
 If you get warnings that you don't get access to write/copy AND you have already rooted your device with SuperSu, you need to give access via the SuperSu apk to adb wanting to operate in root mode (the `su` command).
+
+-------
+**Blue_White**
+![BLUE_WHITE](BLUE_WHITE/BLUE_WHITE.jpg "Blue_White version")
+**Red_White**
+![RED_WHITE](RED_WHITE/RED_WHITE.jpg "Red_White version")
+**Red**
+![RED](RED/RED.jpg "Red version")
+
+*(screenshots made with [Screenshot Touch](https://play.google.com/store/apps/details?id=com.mdiwebma.screenshot))*
