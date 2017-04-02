@@ -24,7 +24,7 @@ One final remark to make: Note that 999 out of 1000 apps **don't need root acces
   * You need either a Windows Laptop/PC or a Linux/\*BSD/MacOS X/Solaris laptop/PC that is connected to the same WiFi network as your Head Unit. You can find the ip-address of your head unit via `Settings -> WiFi; vertical "triple-dot" menu in top-right; Advanced`. 
 
 **How-To install:**</br>
-1. 
+1. Download:
     * On Windows: Better download this repository as a zip. Unzip the file somewhere to your disk.
     * On Linux: Download the repository ith git or download the zip. In case of the zip, unzip the file somewhere to your disk.
 2. 
