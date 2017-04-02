@@ -24,10 +24,11 @@ REM Connect to android unit
 timeout 3 > NUL
 
 
-REM mount system as read-write and update dpi in build.prop
+REM 
+..\win-adb\adb push ./busybox /sdcard/busybox
 ..\win-adb\adb shell "su -c mount -o remount,rw /system"
-..\win-adb\adb shell "su -c cp /system/bin/busybox /system/bin/busybox/busybox.org"
-..\win-adb\adb push ./busybox /system/bin/busybox
+..\win-adb\adb shell "su -c cp /system/bin/busybox /system/bin/busybox.org"
+..\win-adb\adb shell "su -c cp /sdcard/busybox /system/bin/busybox"
 ..\win-adb\adb shell "su -c chmod 06755 /system/bin/busybox"
 ..\win-adb\adb shell "su -c mount -o ro,remount /system"
 
