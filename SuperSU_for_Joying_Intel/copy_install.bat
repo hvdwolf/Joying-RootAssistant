@@ -54,3 +54,5 @@ REM Clean up
 ..\win-adb\adb shell mount -o ro,remount /
 
 echo Reboot your Head Unit NOW!
+
+:END
