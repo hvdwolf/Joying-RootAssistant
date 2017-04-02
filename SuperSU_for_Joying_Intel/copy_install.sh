@@ -13,9 +13,9 @@ set -x
 
 # Setup the connection
 adb kill-server
-adb connect %1
+adb connect $1
 adb root
-adb connect %1
+adb connect $1
 sleep 2
 
 # Make the partitions read-writable
