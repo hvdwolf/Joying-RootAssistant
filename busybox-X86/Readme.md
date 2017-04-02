@@ -22,3 +22,6 @@ Another good version of busybox can be found on Jared Rummler's [github pages](h
     * On linux: Run the update_busybox.sh script with the IP address of your Head Unit as a parameter:`./update_busybox.sh 192.168.178.50` (for example)
 5. Wait until the script finishes.
 6. Done. You can reboot but it is not neccessary.
+
+**Note!**
+If you get warnings that you don't get access to write/copy AND you have already rooted your device with SuperSu, you need to give access via the SuperSu apk to adb wanting to operate in root mode (the `su` command).
