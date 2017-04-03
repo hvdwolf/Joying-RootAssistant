@@ -15,9 +15,9 @@ I put the PS text from (small) top left to the center, increased font size and r
 
 The Radio app has a corrupted RDS text. The PS text is 8 characters and that same field is used for the 32 or 64 character RDS-text, but this string is not handled correctly by the app. 
 
-The RED version is for older Audi (and older Volkswagen?)
-The RED_WHITE version is for a newer Audi (and newer Volkswagen ?)
-The BLUE_WHITE has the frequency inwhite instead of yellow.
+The RED version is for older Audi (and older Volkswagen?)</br>
+The RED_WHITE version is for a newer Audi (and newer Volkswagen ?)</br>
+The BLUE_WHITE has the frequency in white instead of yellow.</br>
 All have the modified Station name (PS text) and modified buttons.
 
 
