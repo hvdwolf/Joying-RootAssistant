@@ -49,6 +49,5 @@ If you get warnings that you don't get access to write/copy AND you have already
 **Red**
 ![RED](RED/RED.jpg "Red version")
 
-NOTE: The RED and RED_WHITE screenshots still have the old "squashed" buttons. The apks however do contain the newer buttons (like the BLUE_WHITE version).
 
 *(screenshots made with [Screenshot Touch](https://play.google.com/store/apps/details?id=com.mdiwebma.screenshot))*
