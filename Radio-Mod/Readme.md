@@ -2,8 +2,8 @@
 
 The default Radio app of Joying is in general working well, but I don't like the layout.
 
-I now made 3 versions: a BLUE\_WHITE, a RED and a RED\_WHITE version. The RED and RED\_WHITE version are simple modifications on the ones that XDA developer [gustden already made](https://forum.xda-developers.com/showpost.php?p=70367793&postcount=434).</br>
-Update 7 April 2017: Added an orange "BMW" version; Corrected P2 button Red version.
+I now made 4 versions: a BLUE\_WHITE, a RED, a RED\_WHITE and an ORANGE version. The RED and RED\_WHITE version are simple modifications on the ones that XDA developer [gustden already made](https://forum.xda-developers.com/showpost.php?p=70367793&postcount=434).</br>
+_Update 7 April 2017: Added an orange "BMW" version; Corrected P2 button Red version._
 
 There are simply 4 folders each containing its own version with a simple install.bat and install.sh script for windows and linux likes.
 
