@@ -2,9 +2,10 @@
 
 The default Radio app of Joying is in general working well, but I don't like the layout.
 
-I now made 3 versions: a BLUE\_WHITE, a RED and a RED\_WHITE version. The RED and RED\_WHITE version are simple modifications on the ones that XDA developer [gustden already made](https://forum.xda-developers.com/showpost.php?p=70367793&postcount=434).
+I now made 3 versions: a BLUE\_WHITE, a RED and a RED\_WHITE version. The RED and RED\_WHITE version are simple modifications on the ones that XDA developer [gustden already made](https://forum.xda-developers.com/showpost.php?p=70367793&postcount=434).</br>
+Update 7 April 2017: Added an orange "BMW" version; Corrected P2 button Red version.
 
-There are simply 3 folders each containing its own version with a simple install.bat and install.sh script for windows and linux likes.
+There are simply 4 folders each containing its own version with a simple install.bat and install.sh script for windows and linux likes.
 
 The mods are currently:
   * only the change of buttons ([gustden's mods](https://forum.xda-developers.com/showpost.php?p=70367793&postcount=434)),
@@ -18,6 +19,7 @@ The Radio app has a corrupted RDS text. The PS text is 8 characters and that sam
 The RED version is for older Audi (and older Volkswagen?)</br>
 The RED_WHITE version is for a newer Audi (and newer Volkswagen ?)</br>
 The BLUE_WHITE has the frequency in white instead of yellow.</br>
+The ORANGE version is for BMWs.<br>
 All have the modified Station name (PS text) and modified buttons.
 
 
@@ -48,6 +50,8 @@ If you get warnings that you don't get access to write/copy AND you have already
 ![RED_WHITE](RED_WHITE/RED_WHITE.jpg "Red_White version")
 **Red**
 ![RED](RED/RED.jpg "Red version")
+**Orange**
+![ORANGE](ORANGE/ORANGE.jpg "Orange version")
 
 
 *(screenshots made with [Screenshot Touch](https://play.google.com/store/apps/details?id=com.mdiwebma.screenshot))*
