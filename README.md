@@ -14,7 +14,7 @@ These scripts can be found in the SuperSU_for_Joying_Intel folder.
 The busybox version on the Joying head units is relatively old and buggy. The scripts in the busybox-X86 folder will update the busybox version on your system.
 
 ## Radio Mods
-The standard layout of the Joying radio app is not very nice. These mods contain 4 versions of a changed layout.
+The standard layout of the Joying radio app is not very nice. These mods contain one version of a changed layout in 4 colors.
 
 
 -----
