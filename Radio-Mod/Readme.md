@@ -2,10 +2,11 @@
 
 The default Radio app of Joying is in general working well, but I don't like the layout.
 
-I now made 4 versions: a BLUE\_WHITE, a RED, a RED\_WHITE and an ORANGE version. The RED and RED\_WHITE version are simple modifications on the ones that XDA developer [gustden already made](https://forum.xda-developers.com/showpost.php?p=70367793&postcount=434).</br>
+I now made 5 versions: a BLUE\_WHITE, a RED, a RED\_WHITE, an ORANGE and a GREEN version. The RED and RED\_WHITE version are simple modifications on the ones that XDA developer [gustden already made](https://forum.xda-developers.com/showpost.php?p=70367793&postcount=434).</br>
+_Update 17 April 2017: Added a green "Ford/Skoda" version._
 _Update 7 April 2017: Added an orange "BMW" version; Corrected P2 button Red version._
 
-There are simply 4 folders each containing its own version with a simple install.bat and install.sh script for windows and linux likes.
+There are simply 5 folders each containing its own version with a simple install.bat and install.sh script for windows and linux likes.
 
 The mods are currently:
   * only the change of buttons ([gustden's mods](https://forum.xda-developers.com/showpost.php?p=70367793&postcount=434)),
@@ -20,6 +21,7 @@ The RED version is for older Audi (and older Volkswagen?)</br>
 The RED_WHITE version is for a newer Audi (and newer Volkswagen ?)</br>
 The BLUE_WHITE has the frequency in white instead of yellow.</br>
 The ORANGE version is for BMWs.<br>
+The GREEN versions is for Ford and Skoda.<br>
 All have the modified Station name (PS text) and modified buttons.
 
 
@@ -52,6 +54,9 @@ If you get warnings that you don't get access to write/copy AND you have already
 ![RED](RED/RED.jpg "Red version")
 **Orange**
 ![ORANGE](ORANGE/ORANGE.jpg "Orange version")
+**GREEN**
+![GREEN](GREEN/GREEN.jpg "Green version")
 
 
 *(screenshots made with [Screenshot Touch](https://play.google.com/store/apps/details?id=com.mdiwebma.screenshot))*
+*The screenshot of the GREEN version made from the Vladikoff Archon emulator*
