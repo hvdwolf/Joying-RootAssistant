@@ -45,7 +45,7 @@ adb shell "cd /sdcard/supersu/ && sh install.sh"
 # Clean up
 adb shell rm -rf /sdcard/supersu
 adb shell rm -rf /data/supersu
-#adb shell sync
+adb shell sync
 #adb shell mount -o ro,remount /system
 
 echo Reboot your Head Unit NOW!
