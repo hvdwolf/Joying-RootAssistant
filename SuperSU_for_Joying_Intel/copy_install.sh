@@ -20,30 +20,32 @@ sleep 2
 
 # Make the partitions read-writable
 adb shell mount -o rw,remount /system
-adb shell mount -o rw,remount /system /system
-adb shell mount -o rw,remount /
-adb shell mount -o rw,remount / /
 
 # Make some temporary folders
-adb shell "mkdir /tmp"
-adb shell "mkdir /tmp/supersu"
+#adb shell "mkdir /sdcard"
+adb shell "mkdir /sdcard/supersu"
 
 # Do the copying
-adb push resources/chattr.pie /tmp/supersu/
-adb push resources/install.sh /tmp/supersu/
-adb push resources/install-recovery.sh /tmp/supersu/
-adb push resources/libsupol.so /tmp/supersu/
-adb push resources/su.pie /tmp/supersu/
-adb push resources/Superuser.apk /tmp/supersu/
-adb push resources/supolicy /tmp/supersu/
+adb push resources/chattr.pie /sdcard/supersu/
+adb push resources/install.sh /sdcard/supersu/
+adb push resources/install-recovery.sh /sdcard/supersu/
+adb push resources/libsupol.so /sdcard/supersu/
+adb push resources/su.pie /sdcard/supersu/
+adb push resources/Superuser.apk /sdcard/supersu/
+adb push resources/supolicy /sdcard/supersu/
+
+# internal copy
+adb shell "su -c mkdir -p /data/supersu"
+adb shell "su -c cp /sdcard/supersu/* /data/supersu/"
 
 # Do the actual installation
-adb shell chmod 0755 /tmp/supersu/install.sh
-adb shell "cd /tmp/supersu/ && sh install.sh"
+adb shell chmod 0755 /data/supersu/install.sh
+adb shell "cd /sdcard/supersu/ && sh install.sh"
 
 # Clean up
-adb shell rm -rf /tmp/supersu
-adb shell mount -o ro,remount /system
-adb shell mount -o ro,remount /
+adb shell rm -rf /sdcard/supersu
+adb shell rm -rf /data/supersu
+#adb shell sync
+#adb shell mount -o ro,remount /system
 
 echo Reboot your Head Unit NOW!

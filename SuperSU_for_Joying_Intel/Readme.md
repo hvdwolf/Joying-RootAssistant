@@ -2,6 +2,9 @@
 This is the [Chainfire.eu SuperSU](https://chainfire.eu/) version 2.79 SR3 of 14 January 2017. This is a repackaged version of the "flashable zip". It is repackaged for Joying Intel Sofia 3GR units.
 My scripts (linux & windows) are based on another windows script for the 2.78 version released/created somewhere in September 2016. Unfortunately I can't give the creator the credits he/she deserves as I have no idea who that was.
 
+**Changelog**</br>
+18 April 2017: Altered the scripts and changed temporary copy location for more robustness.<br>
+
 **CREDITS:**</br>
 All credits go to Chainfire for his SuperSU application. This installation script is just tailored from the SuperSU install-script.
 

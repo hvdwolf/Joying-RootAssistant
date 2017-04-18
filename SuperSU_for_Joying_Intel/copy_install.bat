@@ -27,31 +27,31 @@ timeout 3 > NUL
 
 REM Make the partitions read-writable
 ..\win-adb\adb shell mount -o rw,remount /system
-..\win-adb\adb shell mount -o rw,remount /system /system
-..\win-adb\adb shell mount -o rw,remount /
-..\win-adb\adb shell mount -o rw,remount / /
 
 REM Make some temporary folders
-..\win-adb\adb shell "mkdir /tmp"
-..\win-adb\adb shell "mkdir /tmp/supersu"
+..\win-adb\adb shell "mkdir /sdcard/supersu"
 
 REM Do the copying
-..\win-adb\adb push resources/chattr.pie /tmp/supersu/
-..\win-adb\adb push resources/install.sh /tmp/supersu/
-..\win-adb\adb push resources/install-recovery.sh /tmp/supersu/
-..\win-adb\adb push resources/libsupol.so /tmp/supersu/
-..\win-adb\adb push resources/su.pie /tmp/supersu/
-..\win-adb\adb push resources/Superuser.apk /tmp/supersu/
-..\win-adb\adb push resources/supolicy /tmp/supersu/
+..\win-adb\adb push resources/chattr.pie /sdcard/supersu/
+..\win-adb\adb push resources/install.sh /sdcard/supersu/
+..\win-adb\adb push resources/install-recovery.sh /sdcard/supersu/
+..\win-adb\adb push resources/libsupol.so /sdcard/supersu/
+..\win-adb\adb push resources/su.pie /sdcard/supersu/
+..\win-adb\adb push resources/Superuser.apk /sdcard/supersu/
+..\win-adb\adb push resources/supolicy /sdcard/supersu/
 
-REM  Do the actual installation
-..\win-adb\adb shell chmod 0755 /tmp/supersu/install.sh
-..\win-adb\adb shell "cd /tmp/supersu/ && sh install.sh"
+REM internal copy
+..\win-adb\adb shell "su -c mkdir -p /data/supersu"
+..\win-adb\adb shell "su -c cp /sdcard/supersu/* /data/supersu/"
+
+REM Do the actual installation
+..\win-adb\adb shell chmod 0755 /data/supersu/install.sh
+..\win-adb\adb shell "cd /sdcard/supersu/ && sh install.sh"
 
 REM Clean up
-..\win-adb\adb shell rm -rf /tmp/supersu
-..\win-adb\adb shell mount -o ro,remount /system
-..\win-adb\adb shell mount -o ro,remount /
+..\win-adb\adb shell rm -rf /sdcard/supersu
+..\win-adb\adb shell rm -rf /data/supersu
+..\win-adb\adb shell sync
 
 echo Reboot your Head Unit NOW!
 
