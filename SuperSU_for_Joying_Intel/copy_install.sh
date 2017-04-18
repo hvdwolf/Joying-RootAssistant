@@ -22,7 +22,6 @@ sleep 2
 adb shell mount -o rw,remount /system
 
 # Make some temporary folders
-#adb shell "mkdir /sdcard"
 adb shell "mkdir /sdcard/supersu"
 
 # Do the copying
