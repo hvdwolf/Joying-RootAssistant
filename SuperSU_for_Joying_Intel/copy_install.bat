@@ -46,7 +46,7 @@ REM internal copy
 
 REM Do the actual installation
 ..\win-adb\adb shell chmod 0755 /data/supersu/install.sh
-..\win-adb\adb shell "cd /sdcard/supersu/ && sh install.sh"
+..\win-adb\adb shell "cd /data/supersu/ && sh install.sh"
 
 REM Clean up
 ..\win-adb\adb shell rm -rf /sdcard/supersu
