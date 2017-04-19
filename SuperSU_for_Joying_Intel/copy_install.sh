@@ -39,7 +39,7 @@ adb shell "su -c cp /sdcard/supersu/* /data/supersu/"
 
 # Do the actual installation
 adb shell chmod 0755 /data/supersu/install.sh
-adb shell "cd /sdcard/supersu/ && sh install.sh"
+adb shell "cd /data/supersu/ && sh install.sh"
 
 # Clean up
 adb shell rm -rf /sdcard/supersu
