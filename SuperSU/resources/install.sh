@@ -1,4 +1,4 @@
-#!/sbin/sh
+#!/bin/sh
 #
 # SuperSU installer ZIP
 # Copyright (c) 2012-2016 - Chainfire
