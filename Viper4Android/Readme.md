@@ -1,3 +1,5 @@
-# Viper4android
+# Viper4Android
 
-Not used by me but by many others. No install script. Use my apk.
+Viper4Android is the leading audio enhancement tool.
+
+Only via my apk or use [AssassinsLaments script](https://forum.xda-developers.com/showpost.php?p=72064749&postcount=41).
