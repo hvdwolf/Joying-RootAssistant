@@ -19,9 +19,9 @@ if "%1"=="" (
 )
 
 REM Now do the rooting actions
+..\..\win-adb\adb kill-server
 ..\..\win-adb\adb connect %1
-..\..\win-adb\adb root
-..\..\win-adb\adb connect %1
+
 
 timeout 3 > NUL
 
