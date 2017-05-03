@@ -1,0 +1,20 @@
+## ViPER|Audio™ ##
+
+audio.deep_buffer.media=false
+lpa.decode=false
+tunnel.decode=false
+tunnel.audiovideo.decode=false
+lpa.releaselock=false
+lpa.use-stagefright=false
+persist.sys.media.use-awesome=1
+af.resampler.quality=255
+persist.af.resampler.quality=255
+persist.dev.pm.dyn_samplingrate=1
+ro.sound.driver=alsa
+ro.sound.alsa=snd_pcm
+AUDIODRIVER=alsa
+ro.sound.driver=alsa
+clock.allow_streaming_errors=false
+default.pcm.rate_converter=samplerate_zero_order
+ro.ril.enable.amr.wideband=1
+
