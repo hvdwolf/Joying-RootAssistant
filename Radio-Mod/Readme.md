@@ -3,6 +3,7 @@
 The default Radio app of Joying is in general working well, but I don't like the layout.
 
 I now made 5 versions: a BLUE\_WHITE, a RED, a RED\_WHITE, an ORANGE and a GREEN version. The RED and RED\_WHITE version are simple modifications on the ones that XDA developer [gustden already made](https://forum.xda-developers.com/showpost.php?p=70367793&postcount=434).</br>
+_Update 4 May 2017: Added the default stock Joying app in case you want to switch back._
 _Update 17 April 2017: Added a green "Ford/Skoda" version._
 _Update 7 April 2017: Added an orange "BMW" version; Corrected P2 button Red version._
 
@@ -23,6 +24,7 @@ The BLUE_WHITE has the frequency in white instead of yellow.</br>
 The ORANGE version is for BMWs.<br>
 The GREEN versions is for Ford and Skoda.<br>
 All have the modified Station name (PS text) and modified buttons.
+And for those who wantto switch back to the default Joying Radio app, I also added the JOYING_DEFAULT.
 
 
 **Requirements:**</br>
