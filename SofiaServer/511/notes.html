@@ -1,0 +1,95 @@
+<HTML><PRE>
+V4.0 - 3/18/2017
+
+History:
+
+V4: Updated code base using 3/14/2017 Joying Update
+     Added support for:
+           MEDIA KEY - hard key on unit
+           BAND KEY - hard key on unit
+           ACC_ON - Triggers on key on
+           Minor changes to example shell scripts to add cases for MEDIA, BAND, ACC_ON ( launcher.sh )
+           FIX/UPDATE - Updated list of NAVI APPS in assets/property/navi_app.txt ( allows more applications to speak during radio )
+              Many thanks to @surfer63 for navi app radio fix!
+                    
+V3: Updated code base using 2/24/2017 Joying Update
+     Added support for:
+           ACC_OFF - Triggers on key off
+
+V2: Removed killAppWhenSleep(); - Eliminates tasks being killed on sleep
+     Added support for additional keys / Minor changes to example shell script ( launcher.sh )
+           HOME - hard key on unit 
+           BACK - hard key on unit 
+           HANG - steering wheel softkey 
+           DVD  - hard key on unit (if available)
+           EJECT- hard key on unit (if available)
+           CALL/BT softkey - Fixed issue where key would not respond after call disconnect. 
+
+V1: Initial version 
+
+Supported hard keys/softkeys
+
+KEY CODE - BUTTON - Type
+
+3   - HOME               ( On unit hard key )
+4   - BACK               ( On unit hard key )
+9   - NAVI               ( Steering wheel softkey / On unit hard key )
+27  - CALL/BT PHONE      ( Steering wheel softkey )
+28  - HANG/CALL END      ( Steering wheel softkey)
+31  - DVD                ( On unit hard key )
+32  - EJECT              ( On unit hard key )
+33  - MEDIA              ( On unit hard key )
+34  - BAND               ( On unit hard key )
+37  - MODE/SRC           ( Steering wheel softkey / On unit hard key )
+85* - PAUSEPLAY          ( Steering wheel softkey )
+87* - NEXT               ( Steering wheel softkey )
+88* - PREVIOUS           ( Steering wheel softkey )
+89* - FASTBACK           ( Steering wheel softkey )
+90* - FASTFWD            ( Steering wheel softkey )
+97  - ACC_ON             ( good place to add "Play" )
+98  - ACC_OFF            ( good place to add "Pause" )
+99  - RESUME/RESTORE from suspend
+
+*Indicates they are not passed when using Joying applications. 
+
+Keycodes 3,4,85,87,88,89,90 match android keycodes.  If nothing is assinged they will hit default case and peform as original function (input keyevent $key)
+
+</PRE>
+<B>Example Script functions:</B>
+<p>
+<B>NAVI</B>(9) - One press is Torque, 2 presses is google maps ( must be quick press, like double click on a mouse )
+<p>
+<B>CALL/BT PHONE</B>(27) - One press is BACK,  2 presses is HOME,  3 presses brings up Google Voice Commands (quick presses)
+<p>
+<B>HANG</B>(28) - Not assigned
+<p>
+<B>DVD</B>(31) - Not assigned
+<p>
+<B>EJECT</B>(32) - Not assigned
+<p>
+<B>MEDIA</B>(33) - Not assigned
+<p>
+<B>BAND</B>(34) - Not assigned
+<p>
+<B>MODE/SRC</B>(37) - Rotates through music apps:  Radio, Pandora, Spotify,  Stock Music App -  If it has been longer than 1 minute since the last press it will return you to the last selected music app with first press, then continue with the rotation. 
+<p>
+<B>HOME(3), BACK(4), PAUSE/PLAY(85*), NEXT(87*), PREVIOUS(88*), FASTBACK(89*), FASTFWD(90*)</B> - Currently set to perform stock functions.   They ARE passed to script so they can be assigned other functions if wanted. 
+<p>
+<B>ACC_ON</B>(97) - Sends Play ( starts current music player )
+<p>
+<B>ACC_OFF</B>(98) - Sends Pause ( stops current music player )  
+<p>
+<B>RESUME</B>(99) - Executes on system resume.  
+<p>
+*Please note the media control keys marked with a (*) are hardcoded to specific functions within the stock Joying applications.  <B>They are only passed through to the shell script when you are NOT using a Joying media application</B>.  They will ONLY work as the original keys when you are within the Joying media applications.
+<p>
+Attached is a zip file with the updated Sofia-1-C9-Server-V1.0.apk, launcher.sh ( my example script), and install script.   The launcher.sh script must be placed in the /data directory ( /data/launcher.sh ), as it is hardcoded in the apk file.  
+<p>
+The install script is a shell/linux script, but you can easily copy/paste the adb commands if your using windows.
+<p>
+<B><NOTE: Please update to the latest version of busybox!  I found some bugs in the version included by Joying that caused several issues.></B>
+
+<h2>SOFTKEY/HARDKEY Assignments</h2>
+<img src="key_mapper.jpg">
+<img src="Panel_keys.jpg">
+</HTML>
