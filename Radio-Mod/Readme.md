@@ -41,7 +41,7 @@ And for those who wantto switch back to the default Joying Radio app, I also add
     * On Windows: Run the install.bat script with the IP address of your Head Unit as a parameter: `install.bat 192.168.178.50` (for example)
     * On linux: Run the install.sh script with the IP address of your Head Unit as a parameter:`./install.sh 192.168.178.50` (for example)
 5. Wait until the script finishes.
-6. Done. You can reboot but it is not neccessary.
+6. Done. If you replaced the original Radio app with a modded version, you need to reboot. If you change one of my modded versions with another of my modded versions, a reboot is not neccessary.
 
 
 **Note!**
