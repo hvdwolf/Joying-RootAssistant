@@ -3,7 +3,7 @@
 WARNING: Only for joying Intel 3GR head units.
 
 Currently the releases for this repository contain the SuperSU install scripts and the apk for the installation of several modded Joying apks, additional tools and busybox.
-You can find the releases on the Releases page (See also the link above the green bar)
+You can find the releases on the [Releases page](https://github.com/hvdwolf/Joying-RootAssistant/releases) (See also the link above the green bar)
 
 ## 1. SuperSU_for_Joying_Intel
 The Joying units are rooted but miss a user-friendly Superuser apk that deals with the SELinux policies on your unit.
