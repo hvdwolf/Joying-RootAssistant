@@ -20,6 +20,7 @@ sleep 2
 
 # Make the partitions read-writable
 adb shell mount -o rw,remount /system
+adb shell mount -o rw,remount /system /system
 
 # Make some temporary folders
 adb shell "mkdir /sdcard/supersu"
