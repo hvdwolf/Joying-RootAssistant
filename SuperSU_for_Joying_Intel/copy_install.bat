@@ -27,6 +27,7 @@ timeout 3 > NUL
 
 REM Make the partitions read-writable
 ..\win-adb\adb shell mount -o rw,remount /system
+..\win-adb\adb shell mount -o rw,remount /system /system
 
 REM Make some temporary folders
 ..\win-adb\adb shell "mkdir /sdcard/supersu"
