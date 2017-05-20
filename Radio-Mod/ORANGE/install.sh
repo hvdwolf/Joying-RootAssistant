@@ -23,6 +23,7 @@ adb shell "su -c mount -o remount,rw /system"
 adb shell "su -c cp /system/app/JY-1-C9-Radio-V1.0/JY-1-C9-Radio-V1.0.apk /system/app/JY-1-C9-Radio-V1.0/JY-1-C9-Radio-V1.0.apk.old"
 adb shell "su -c cp /sdcard/JY-1-C9-Radio-V1.0.apk /system/app/JY-1-C9-Radio-V1.0"
 adb shell "su -c chmod 644 /system/app/JY-1-C9-Radio-V1.0/JY-1-C9-Radio-V1.0.apk"
+adb shell "su -c chown root.root /system/app/JY-1-C9-Radio-V1.0/JY-1-C9-Radio-V1.0.apk"
 adb shell "su -c ls -l /system/app/JY-1-C9-Radio-V1.0"
 
 #echo "######### PLEASE REBOOT YOUR SYSTEM ###########"
