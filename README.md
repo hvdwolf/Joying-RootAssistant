@@ -17,7 +17,8 @@ The busybox version on the Joying head units is relatively old and buggy. The sc
 Note: Click the [busybox-X86](https://github.com/hvdwolf/Joying-RootAssistant/tree/master/busybox-X86) link here or in the list above to read the Readme on that page for instructions.
 
 ## Radio Mods
-The standard layout of the Joying radio app is not very nice. These mods contain one version of a changed layout in 5 colors.<br>
+Note: now split in a 5.1.1 and a 6.0.1 section.
+The standard layout of the Joying radio app is not very nice. These mods contain one version of a changed layout in 5 colors for 5.1.1 and a new one for 6.0.1.<br>
 Note: Click the [Radio-Mod](https://github.com/hvdwolf/Joying-RootAssistant/tree/master/Radio-Mod) link here or inbove list to read the Readme on that page for instructions.
 
 
