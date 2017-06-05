@@ -1,5 +1,6 @@
-# Modifying the layout of Joying apps.
+# Modifying the layout of the Joying Radio app.
 
+Essentially this works for most apks. There are some differences where the layout is defined in xml files or on json files.
 
 ## Requirements:
 - java runtime version 7 or better.<br>
