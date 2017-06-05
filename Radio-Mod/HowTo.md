@@ -1,4 +1,4 @@
-# Modifying the layout of Joying apps.
+#Modifying the layout of Joying apps.
 
 
 ## Requirements:
