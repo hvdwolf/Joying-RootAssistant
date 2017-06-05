@@ -71,8 +71,8 @@ const-string v3, ""
 
 ## Relation between the graphical elements and the layout definition
 All the graphical elements like buttons, the frequency ruler and numbers for the (big) frequency are in "res/drawable-land-nodpi-v4".
-The layout definition is in "raw/radio_ui.json". The "radio_ui.json" determines which graphical elements are used, and how and where they are positioned. The "radio_ui.json" also determines which texts in which font and font size are used and where they are positioned.br>
-Examples:<br>
+The layout definition is in "raw/radio_ui.json". The "radio_ui.json" determines which graphical elements are used, and how and where they are positioned. The "radio_ui.json" also determines which texts in which font and font size are used and where they are positioned.<br>
+**Examples**:<br>
 - The big frequency ruler is named "type":"HorizontalRuler" in the radio_ui.json and defined by the graphical element "drawables":["bk_ruler"], where "bk_ruler.png" is the image. Note that in the json file no extensions (.png) are used.
 - The "type":"StationView" determines the 6 buttons with inactive (unselected: *_n) and active (selected: *_p) and "on_click/on_tap" (*_p) state.
 - The Frequency numbers and the buttons left/right around it. The frequency numbers are the images "num_0.png" to "num_9.png", plus the "num_point.png". The buttons left/right are the "drawables":["ic_freqm_n", "ic_freqm_p"] (down) and "drawables":["ic_freqp_n", "ic_freqp_p"] (up).
@@ -110,7 +110,7 @@ Q2. I can't get a connection to the unit.<br>
 A2. Search the web and find out how adb should work, see also the readme in my Radio mods. On 6.0.1 first activate adb over tcpip, or conect via USB.
 
 Q3. You get a android icon instead of the Radio icon and when you tap it, your unit says "application not installed".<br>
-A3. Reboot, check again and try again to copy it again to your unit. If nothing works (after a couple of attempts), reboot and copy the original radio apk back in place, reboot again.
+A3. Reboot, check again and try another time to copy it to your unit. If nothing works (after a couple of attempts), reboot and copy the original radio apk back in place, reboot again.
 
 Q4. You rebooted the unit and you hear music, but you don't see a Radio icon.<br>
 A4. Same as Q3/A3: so do the same. This is due to the fact that the Radio function is a 2-step approach on the Intel joying units. The CarRadio.apk (hidden) does the real work. The Radio.apk is just the visible "tweak and go" app.
