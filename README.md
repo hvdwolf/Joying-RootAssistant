@@ -6,7 +6,7 @@ Currently this repository only contains the SuperSU install scripts, the busybox
 
 ## SuperSU_for_Joying_Intel
 The Joying units are rooted but miss a user-friendly Superuser apk that deals with the SELinux policies on your unit.
-Download the relevant zip file from [Releases](https://github.com/hvdwolf/Joying-RootAssistant/releases/tag/20170617) page.
+Download the relevant zip file from [Releases](https://github.com/hvdwolf/Joying-RootAssistant/releases/) page.
 
 
 ## Radio Mods

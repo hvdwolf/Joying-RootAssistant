@@ -25,7 +25,7 @@ One final remark to make: Note that 999 out of 1000 apps **don't need root acces
 
 
 **How-To install:**</br>
-1. Download the SuperSU zip from the [Releases](https://github.com/hvdwolf/Joying-RootAssistant/releases/tag/20170617-02) and unzip it.
+1. Download the SuperSU zip from the [Releases](https://github.com/hvdwolf/Joying-RootAssistant/releases/) page and unzip it.
 2. 
     * On Windows: Run CMD.exe as Administrator. 
     * On Linux likes: Open a terminal.
