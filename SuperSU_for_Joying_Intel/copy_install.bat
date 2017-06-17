@@ -19,40 +19,39 @@ if "%1"=="" (
 )
 
 REM Setup the connection
-..\win-adb\adb kill-server
-..\win-adb\adb connect %1
-..\win-adb\adb root
-..\win-adb\adb connect %1
+win-adb\adb kill-server
+win-adb\adb connect %1
+win-adb\adb root
+win-adb\adb connect %1
 timeout 3 > NUL
 
 REM Make the partitions read-writable
-..\win-adb\adb shell mount -o rw,remount /system
-..\win-adb\adb shell mount -o rw,remount /system /system
+win-adb\adb shell mount -o rw,remount /system
 
 REM Make some temporary folders
-..\win-adb\adb shell "mkdir /sdcard/supersu"
+win-adb\adb shell "mkdir /sdcard/supersu"
 
 REM Do the copying
-..\win-adb\adb push resources/chattr.pie /sdcard/supersu/
-..\win-adb\adb push resources/install.sh /sdcard/supersu/
-..\win-adb\adb push resources/install-recovery.sh /sdcard/supersu/
-..\win-adb\adb push resources/libsupol.so /sdcard/supersu/
-..\win-adb\adb push resources/su.pie /sdcard/supersu/
-..\win-adb\adb push resources/Superuser.apk /sdcard/supersu/
-..\win-adb\adb push resources/supolicy /sdcard/supersu/
+win-adb\adb push resources/chattr.pie /sdcard/supersu/
+win-adb\adb push resources/install.sh /sdcard/supersu/
+win-adb\adb push resources/install-recovery.sh /sdcard/supersu/
+win-adb\adb push resources/libsupol.so /sdcard/supersu/
+win-adb\adb push resources/su.pie /sdcard/supersu/
+win-adb\adb push resources/Superuser.apk /sdcard/supersu/
+win-adb\adb push resources/supolicy /sdcard/supersu/
 
 REM internal copy
-..\win-adb\adb shell "mkdir -p /data/supersu"
-..\win-adb\adb shell "cp /sdcard/supersu/* /data/supersu/"
+win-adb\adb shell "su -c mkdir -p /data/supersu"
+win-adb\adb shell "su -c cp /sdcard/supersu/* /data/supersu/"
 
 REM Do the actual installation
-..\win-adb\adb shell chmod 0755 /data/supersu/install.sh
-..\win-adb\adb shell "cd /data/supersu/ && sh install.sh"
+win-adb\adb shell chmod 0755 /data/supersu/install.sh
+win-adb\adb shell "cd /data/supersu/ && sh install.sh"
 
 REM Clean up
-..\win-adb\adb shell rm -rf /sdcard/supersu
-..\win-adb\adb shell rm -rf /data/supersu
-..\win-adb\adb shell sync
+win-adb\adb shell rm -rf /sdcard/supersu
+win-adb\adb shell rm -rf /data/supersu
+win-adb\adb shell sync
 
 echo Reboot your Head Unit NOW!
 

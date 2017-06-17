@@ -20,7 +20,6 @@ sleep 2
 
 # Make the partitions read-writable
 adb shell mount -o rw,remount /system
-adb shell mount -o rw,remount /system /system
 
 # Make some temporary folders
 adb shell "mkdir /sdcard/supersu"
@@ -35,8 +34,8 @@ adb push resources/Superuser.apk /sdcard/supersu/
 adb push resources/supolicy /sdcard/supersu/
 
 # internal copy
-adb shell "mkdir -p /data/supersu"
-adb shell "cp /sdcard/supersu/* /data/supersu/"
+adb shell "su -c mkdir -p /data/supersu"
+adb shell "su -c cp /sdcard/supersu/* /data/supersu/"
 
 # Do the actual installation
 adb shell chmod 0755 /data/supersu/install.sh
