@@ -19,22 +19,22 @@ if "%1"=="" (
 )
 
 REM Now do the rooting actions
-..\..\win-adb\adb connect %1
-..\..\win-adb\adb root
-..\..\win-adb\adb connect %1
+..\win-adb\adb kill-server
+..\win-adb\adb connect %1
+
 
 timeout 3 > NUL
 
 REM Push update APK file to sdcard then /system/app
-..\..\win-adb\adb push JY-1-C9-Radio-V1.0.apk /sdcard/
-..\..\win-adb\adb shell "su -c am force-stop com.syu.radio"
-..\..\win-adb\adb shell "su -c mount -o remount,rw /system"
-..\..\win-adb\adb shell "su -c cp /system/app/JY-1-C9-Radio-V1.0/JY-1-C9-Radio-V1.0.apk /system/app/JY-1-C9-Radio-V1.0/JY-1-C9-Radio-V1.0.apk.old"
-..\..\win-adb\adb shell "su -c cp /sdcard/JY-1-C9-Radio-V1.0.apk /system/app/JY-1-C9-Radio-V1.0"
-..\..\win-adb\adb shell "su -c chmod 644 /system/app/JY-1-C9-Radio-V1.0/JY-1-C9-Radio-V1.0.apk"
-..\..\win-adb\adb shell "su -c ls -l /system/app/JY-1-C9-Radio-V1.0"
+..\win-adb\adb push JY-1-C9-Radio-V1.0.apk /sdcard/
+..\win-adb\adb shell "su -c am force-stop com.syu.radio"
+..\win-adb\adb shell "su -c mount -o remount,rw /system"
+..\win-adb\adb shell "su -c cp /system/app/JY-1-C9-Radio-V1.0/JY-1-C9-Radio-V1.0.apk /system/app/JY-1-C9-Radio-V1.0/JY-1-C9-Radio-V1.0.apk.old"
+..\win-adb\adb shell "su -c cp /sdcard/JY-1-C9-Radio-V1.0.apk /system/app/JY-1-C9-Radio-V1.0"
+..\win-adb\adb shell "su -c chmod 644 /system/app/JY-1-C9-Radio-V1.0/JY-1-C9-Radio-V1.0.apk"
+..\win-adb\adb shell "su -c ls -l /system/app/JY-1-C9-Radio-V1.0"
 
-..\..\win-adb\adb kill-server
+..\win-adb\adb kill-server
 
 echo.
 echo "You need to reboot your device now."
