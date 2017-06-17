@@ -1,9 +1,9 @@
 # SuperSu v2.82 SR1
-This is the [Chainfire.eu SuperSU](https://chainfire.eu/) version 2.79 SR3 of 14 January 2017. This is a repackaged version of the "flashable zip". It is repackaged for Joying Intel Sofia 3GR units.
+This is the [Chainfire.eu SuperSU](https://chainfire.eu/) version 2.82 SR1 of 09 June 2017. This is a repackaged version of the "flashable zip". It is repackaged for Joying Intel Sofia 3GR units.
 My scripts (linux & windows) are based on another windows script for the 2.78 version released/created somewhere in September 2016. Unfortunately I can't give the creator the credits he/she deserves as I have no idea who that was.
 
 **Changelog**</br>
-17 June 2017: Updated SuperSu.ap and its binaries to V2.82-SR1<br>
+17 June 2017: Updated SuperSu.apk and its binaries to V2.82-SR1<br>
 18 April 2017: Altered the scripts and changed temporary copy location for more robustness.<br>
 
 **CREDITS:**</br>
