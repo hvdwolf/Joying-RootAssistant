@@ -58,7 +58,13 @@
     </table>
     
     <p><H3>Temperature monitoring</H3><a href="images/tempmon.jpg"><img src="images/thumb-tempmon.jpg"></a><br>
-        This option reads the 5 temperature sensors upon opening the screen. It doesn't need root access.<br>After checking the checkbox "repeat every 30 seconds", the "Refresh" button is disabled and the option to write these measurements to file will be enabled. This file is saved to /sdcard and has the name "YearMonthDate_HourMinutesSeconds.csv", meaning for example: "20171208_163315.csv", with hours in 24 hours format. The csv file is | (pipe) separated.<br>As long as you are in the "Monitor temperatures" screen, even if the app is in the background, the recording and saving will continue. That is, until the android task manager might kill it. Writing to file stops if you uncheck the box. Measurements and writing to file also stops if you exit the "Monitor temperatures" screen or close the app.
+        This option reads the 5 temperature sensors upon opening the screen. It doesn't need root access.<br>After checking the checkbox "repeat every 30 seconds", the "Refresh" button is disabled and the option to write these measurements to file will be enabled. This file is saved to /sdcard and has the name "YearMonthDate_HourMinutesSeconds.csv", meaning for example: "20171208_163315.csv", with hours in 24 hours format. The csv file is | (pipe) separated.<br>As long as you are in the "Monitor temperatures" screen, even if the app is in the background, the recording and saving will continue. That is, until the android task manager might kill it. Writing to file stops if you uncheck the box. Measurements and writing to file also stops if you exit the "Monitor temperatures" screen or close the app.<br>
+        The saved file will look like<br><code>YYYY-MM-DD hh:mm:ss|temp0|temp1|temp3|temp4|temp5<br>
+2017-06-09 13:52:15|42.493|41.302|41.896|40.12|41.896<br>
+2017-06-09 13:52:45|46.116|43.692|44.295|40.12|43.692<br>
+2017-06-09 13:53:15|46.728|45.507|47.958|41.896|47.958</code><br>
+        Simply open it in Excel, Google Calc or whatever other spreadsheets and mark the pipe sign "|" as separator. I will improve it later.
+        
     </p>
     <p><H3>My WiFi address</H3>
         If you click the "My WiFi address" from the top-left menu,you will see something like:<br>
