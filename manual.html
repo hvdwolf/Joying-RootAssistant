@@ -1,0 +1,96 @@
+<!doctype html>
+<html>
+<head>
+    <title>Some extra Info on Joying Tooling</title>
+    <META NAME="description" LANG="EN" CONTENT="Joying tooling">
+    <META NAME="keywords" LANG="EN" CONTENT="Joying, Intel, Sofia 3GR, rooting, mods, busybox, SofiaServer, Radio, Viper4Android">
+    <META NAME="description" LANG="NL" CONTENT="Joying Tooling">
+    <META NAME="keywords" LANG="NL" CONTENT="Joying, Intel, Sofia 3GR, rooting, mods, busybox, SofiaServer, Radio, Viper4Android">
+    <META NAME="keywords" LANG="DE" CONTENT="Joying, Intel, Sofia 3GR, rooting, mods, busybox, SofiaServer, Radio, Viper4Android">
+    <META NAME="keywords" LANG="FR" CONTENT="Joying, Intel, Sofia 3GR, rooting, mods, busybox, SofiaServer, Radio, Viper4Android">
+    <META NAME="keywords" LANG="ES" CONTENT="Joying, Intel, Sofia 3GR, rooting, mods, busybox, SofiaServer, Radio, Viper4Android">
+
+    <meta name="author" content="Harry">
+    <meta charset="utf-8">
+
+<link rel="shortcut icon" href="images/favicon.ico" >
+
+<link rel="STYLESHEET" type="text/css" href="css/styles.css">
+
+</head>
+<body style="margin-left: 50px; margin-right: 50px;">
+    <center>
+    <!-- First  "menu" -->
+            <p class="menu"><a href="https://hvdwolf.github.io/Joying-Tooling/">Home</a> &nbsp;&nbsp;&nbsp; <a href="https://github.com/hvdwolf/Joying-Tooling/releases">Downloads</a> &nbsp;&nbsp;&nbsp;  <a href="manual.html">Manual</a> &nbsp;&nbsp;&nbsp;  <a href="credits.html">Credits</a> &nbsp;&nbsp;&nbsp;  <a href="https://github.com/hvdwolf/Joying-Tooling/">Source code</a></p>
+    </center>
+    <H3>Note that actual screens and menus in the application may differ from the ones on this webpage.</H3><i>Click a screenshot for a fullsize version. The screenshots are "bordered" to make them clearer.</i>
+    <p>If you open the apk you will see the following screen upon startup.<br><a href="images/disclaimer.jpg"><img border="1" src="images/thumb-disclaimer.jpg"></a><br>
+    This screen will always be displayed on every start. If you don't like that, sorry but it will stay for my own protection.
+    </p>
+    <div class="simple_table">
+        <div class="simple-table-row">
+            <div class="simple-table-col">If you don't accept (No way) you will see:<br><a href="images/disclaimer_denied.jpg"><img src="images/thumb-disclaimer_denied.jpg" border="1"></a>
+            </div>
+            <div class="simple-table-col">If you do accept you will see:<br><a href="images/mainscreen.jpg"><img src="images/thumb-mainscreen.jpg" border="1"></a>
+            </div>
+        </div>
+    </div>
+    <p><strong>Note:</strong> This application needs root access for almost all options. That means that the first time a rooted action is performed, SuperSu will show a popup whether it is allowed to give root access to the "Joying Extra Tools" app. If you do this during one of the selected actions, it might not work due to the fact that the app and underlying routines get "focus", which makes it impossible to tap the SuperSu popup to give root access.<br>
+    <strong>Advice:</strong> After first startup (and the Accept step), exit the application. Upon closure the app does cleanup temporary "stuff" and that requires root access as well. That's the moment to give root access, so it won't be necessary to do that on consecutive uses.</p>
+    <!-- <p>If you don't accept (No way) you will see:<br><a href="images/disclaimer_denied.jpg"><img src="images/thumb-disclaimer_denied.jpg" border="1"></a></p>
+    <p>If you do accept you will see:<br><a href="images/mainscreen.jpg"><img src="images/thumb-mainscreen.jpg" border="1"></a></p> -->
+
+    <hr>
+    <H2>The top-left and top-right menus from the menu bar.</H2>
+    <!-- <div class="simple_table">
+        <div class="simple-table-row">
+            <div class="simple-table-col">top-left menu (when tapped upon)</div>
+            <div class="simple-table-col">top-right menu (when tapped upon)</div>
+        </div>
+        <div class="simple-table-row">
+            <div class="simple-table-col"><img src="images/top_left_menu.jpg"></div>
+            <div class="simple-table-col"><img src="images/thumb-tempmon_info.jpg"></div>
+        </div>
+    </div> -->
+    <table border="0" cellpadding="10">
+        <tr><th><img src="images/top-left-icon.jpg" HEIGHT="70%">&nbsp;top-left menu (when tapped upon)</th><th>top-right menu (when tapped upon)&nbsp;<img src="images/top-right-icon.jpg" HEIGHT="70%"></th></tr>
+        <tr><td><img src="images/top_left_menu.jpg"></td><td><a href="images/about.jpg"><img src="images/thumb-about.jpg"></a></td></tr>
+    </table>
+    
+    <p><H3>Temperature monitoring</H3><a href="images/tempmon.jpg"><img src="images/thumb-tempmon.jpg"></a><br>
+        This option reads the 5 temperature sensors upon opening the screen. It doesn't need root access.<br>After checking the checkbox "repeat every 30 seconds", the "Refresh" button is disabled and the option to write these measurements to file will be enabled. This file is saved to /sdcard and has the name "YearMonthDate_HourMinutesSeconds.csv", meaning for example: "20171208_163315.csv", with hours in 24 hours format. The csv file is | (pipe) separated.<br>As long as you are in the "Monitor temperatures" screen, even if the app is in the background, the recording and saving will continue. That is, until the android task manager might kill it. Writing to file stops if you uncheck the box. Measurements and writing to file also stops if you exit the "Monitor temperatures" screen or close the app.
+    </p>
+    <p><H3>My WiFi address</H3>
+        If you click the "My WiFi address" from the top-left menu,you will see something like:<br>
+        <a href="images/WiFiSettings.jpg"><img src="images/thumb-WiFiSettings.jpg"></a>
+    </p>
+    <hr>
+    <H2>The options from the main screen.</H2>
+    <p>Again: If you do accept you will see:<br><a href="images/mainscreen.jpg"><img src="images/thumb-mainscreen.jpg" border="1"></a></p>
+    <p>Note that some options are buttons and others are "list pickers" (drop-down options).</p>
+    <ul>
+    <li><strong>Enable adb over WiFi</strong> or <strong>Disable adb over WiFi</strong>: Depending on the current setting of the unit.<br>adb over WiFi is very handy, as you can access your unit from a distance. At the same time it is a security risk. When enabled, everyone able to "join" your WiFi network can within a minute access your unit on root level without even having to specify a password.<br> A good measure is always a strong password on your WiFi network (or your hot spot). This makes it off course much harder to hack. But if you don't need it, switch it off.</li>
+    <li><strong>Rooting / Busybox/ Rsync</strong></li>
+    <ul>
+        <li>Update my SuperSU</br>
+        <strong><i>This app can not root your unit!</i></strong> This app can only update a unit that already has SuperSU installed. SuperSU is automatically updated from the Play Store, but the accompanying binaries and libraries a This are not. This option installs the latest SuperSu apk, SE linux policies and another su binary.</li>
+        <li><strong>Update busybox:</strong> The busybox version installed on the Joying units is old and buggy. This will install a better one. It is strongly advised to install thisversion and it is a requirement for Viper4Android!</li>
+        <li><strong>Install rsync:</strong> rsync can be used for all kind of things. See for yourself.</li>
+    </ul>
+    <li><strong>Radio Mods</strong>: This listpicker gives a couple of options to install different colored Radios aps.</li>
+    <li><strong>SofiaServer Mods</strong><br><a href="images/sofiaserver.jpg"><img src="images/thumb-sofiaserver.jpg"></a></li>
+    <ul>
+        <li>NoKill: When the unit goes into sleep mode, all apps are killed apart from a few "designated" apps. This version makes sure that not one single app is killed when going into sleep mode.</li>
+        <li>NoKill SRC hardcoded->GoogleVoice: This one has the NoKill feature. Additionally the SRC button of your steering wheel keys is hardcoded to start Google Voice (when installed) on your unit. Google voice can then be used to start a phone call, the radio, music player, navigation, etc. with a voice command.</li>
+        <li>NoKill + Steering wheel mods: This one has the NoKill feature and (almost) complete functionality to assign commands or apks to your steering wheel keys and/or unit hardware keys. <strong>Note</strong>: It might require that you modify the default launcher.sh for your specific purpose.</li>
+        <li>USBDAC only: This version enables the audio output to be improved via a USB DAC (one that is supported by the unit).</li>
+        <li>USBDAC-NoKill: Like the USBDAC but also with the NoKill feature.</li>
+	    <li>Launcher.sh: If you install the Custom Key Mods (aka Steering wheel mods) version, you need to have a launcher.sh. The default launcher.sh is installed, but probably you need something slightly different. That means that you need to modify it. After modifying you need to place it in the root of the internal memory of your unit. Internal memory is also known as as /sdcard. Then the apk can find it and install it in the right location.</li>
+    </ul>
+    <li><strong>Alter DPI (lcd_density)</strong>: The default DPI setting for all the 1024x600 Joying units is 160. This option gives you the opportunity to select another DPI value.</li>
+    <li><strong>Install Viper4Android</strong>: Viper4Android is the leading audio enhancement tool. It will improve your sound quality but don't expect miracles as the used DAC in your Joying is not of high quality (see also the SofiaServer USBDAC version).</li>
+    <!-- <li><strong>Google Settings</strong>: Joying has its own Settings.apk with some added options and some removed options, if you compare it to the stock android Settings.apk.  They have identical package names being "com.android.settings". You can't install 2 of the same packages (= same package names, not necessarily same apk name).<br>This Google Settings.apk has internally been completely changed to "com.android.googlesettings" and will be installed next to the Joying Settings.apk. This means that you will have 2 Settings apps.<br>Please be aware of that.</li> -->
+    </ul>
+
+</body>
+</html>

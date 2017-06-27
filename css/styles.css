@@ -1,0 +1,48 @@
+
+<!--
+body, p { font-family: Arial, Helvetica, sans-serif; color: #040498; 
+                scrollbar-face-color: #ffffff; scrollbar-shadow-color: #020266; scrollbar-highlight-color: #0000A0;
+  							scrollbar-3dlight-color: #cccccc; scrollbar-darkshadow-color: #0000A0; scrollbar-track-color: #ffffff;
+  							scrollbar-arrow-color: #99ccee};
+tdhead (font-style: strong;);
+.tdhead (font-style: strong;);
+table, simple_table { border-collapse: collapse; }
+/* table, th, td { border: 1px solid black; vertical-align: top;} */
+table, th, td { vertical-align: top;}
+xpsp2 {font-family: Arial, Helvetica, sans-serif; font-size: 8pt; text-align: left; color: #040498; font-style: italic;}
+.xpsp2 {font-family: Arial, Helvetica, sans-serif; font-size: 8pt; text-align: left; color: #040498; font-style: italic;}
+menu {font-family: Arial, Helvetica, sans-serif; font-size: 200%; text-align: center; }
+.menu {font-family: Arial, Helvetica, sans-serif; font-size: 200%; text-align: center; }
+
+	
+.simple-table {
+  display: table;         
+  width: auto;     
+  table-layout: fixed;
+  /* background-color: #eee;         
+  border: 1px solid #666666;  */       
+  border-spacing: 25px; /* cellspacing:poor IE support for  this */
+}
+.simple-table-row {
+  display: table-row;
+  width: auto;
+  clear: both;
+  border-spacing: 25px;
+}
+.simple-table-col {
+  float: left; /* fix for  buggy browsers */
+  display: table-column; 
+  padding: 25px;
+  vertical-align: top;
+  /* width: 200px;         
+  background-color: #ccc; */ 
+}
+.simple-table-colheader {
+  float: left; /* fix for  buggy browsers */
+  text-align: center;
+  display: table-column; 
+  padding: 25px;
+  /* width: 200px;         
+  background-color: #ccc; */ 
+}
+-->
