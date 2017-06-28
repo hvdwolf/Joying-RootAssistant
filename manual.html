@@ -18,23 +18,31 @@
 <link rel="STYLESHEET" type="text/css" href="css/styles.css">
 
 </head>
-<body style="margin-left: 50px; margin-right: 50px;">
-    <center>
+<body bgcolor="#FFFFF8">
+<center>
+<table border="0" width="940"><tr><td>
     <!-- First  "menu" -->
-            <p class="menu"><a href="https://hvdwolf.github.io/Joying-RootAssistant/">Home</a> &nbsp;&nbsp;&nbsp; <a href="https://github.com/hvdwolf/Joying-RootAssistant/releases">Downloads</a> &nbsp;&nbsp;&nbsp;  <a href="manual.html">Manual</a> &nbsp;&nbsp;&nbsp;  <a href="credits.html">Credits</a> &nbsp;&nbsp;&nbsp;  <a href="https://github.com/hvdwolf/Joying-RootAssistant/">Source code</a></p>
-    </center>
-    <H3>Note that actual screens and menus in the application may differ from the ones on this webpage.</H3><i>Click a screenshot for a fullsize version. The screenshots are "bordered" to make them clearer.</i>
-    <p>If you start the apk you will see the following screen upon startup.<br><a href="images/disclaimer.jpg"><img border="1" src="images/thumb-disclaimer.jpg"></a><br>
+    <p class="menu"><a href="https://hvdwolf.github.io/Joying-RootAssistant/">Home</a> &nbsp;&nbsp;&nbsp; <a href="https://github.com/hvdwolf/Joying-RootAssistant/releases">Downloads</a> &nbsp;&nbsp;&nbsp;  <a href="manual.html">Manual</a> &nbsp;&nbsp;&nbsp;  <a href="credits.html">Credits</a> &nbsp;&nbsp;&nbsp;  <a href="https://github.com/hvdwolf/Joying-RootAssistant/">Source code</a></p>
+
+    <H3>Note that actual screens and menus in the application may differ from the ones on this webpage.</H3><i>Click a screenshot for a fullsize version.</i>
+    <p>If you start the apk you will see the following screen upon startup.<br><a href="images/disclaimer.jpg"><img src="images/thumb-disclaimer.jpg"></a><br>
     This screen will always be displayed on every start. If you don't like that, sorry but it will stay for my own protection.
     </p>
-    <div class="simple_table">
+    <!--<div class="simple_table">
         <div class="simple-table-row">
             <div class="simple-table-col">If you don't accept (No way) you will see:<br><a href="images/disclaimer_denied.jpg"><img src="images/thumb-disclaimer_denied.jpg" border="1"></a>
             </div>
             <div class="simple-table-col">If you do accept you will see:<br><a href="images/mainscreen.jpg"><img src="images/thumb-mainscreen.jpg" border="1"></a>
             </div>
         </div>
-    </div>
+    </div> -->
+    <table cellpadding="10">
+        <tr><th>If you don't accept (No way) you will see:</th><th>If you do accept you will see:</th></tr>
+        <tr>
+            <td><a href="images/disclaimer_denied.jpg"><img src="images/thumb-disclaimer_denied.jpg"></a></td>
+            <td><a href="images/mainscreen.jpg"><img src="images/thumb-mainscreen.jpg"></a></td>
+        </tr>
+    </table>
     <p><strong>Note:</strong> This application needs root access for almost all options. That means that the first time a rooted action is performed, SuperSu will show a popup whether it is allowed to give root access to the "Joying Extra Tools" app. If you do this during one of the selected actions, it might not work due to the fact that the app and underlying routines get "focus", which makes it impossible to tap the SuperSu popup to give root access.<br>
     <strong>Advice:</strong> After first startup (and the Accept step), exit the application. Upon closure the app does cleanup temporary "stuff" and that requires root access as well. That's the moment to give root access, so it won't be necessary to do that on consecutive uses.</p>
     <!-- <p>If you don't accept (No way) you will see:<br><a href="images/disclaimer_denied.jpg"><img src="images/thumb-disclaimer_denied.jpg" border="1"></a></p>
@@ -59,11 +67,11 @@
     
     <p><H3>Temperature monitoring</H3><a href="images/tempmon.jpg"><img src="images/thumb-tempmon.jpg"></a><br>
         This option reads the 5 temperature sensors upon opening the screen. It doesn't need root access.<br>After checking the checkbox "repeat every 30 seconds", the "Refresh" button is disabled and the option to write these measurements to file will be enabled. This file is saved to /sdcard and has the name "YearMonthDate_HourMinutesSeconds.csv", meaning for example: "20171208_163315.csv", with hours in 24 hours format. The csv file is | (pipe) separated.<br>As long as you are in the "Monitor temperatures" screen, even if the app is in the background, the recording and saving will continue. That is, until the android task manager might kill it. Writing to file stops if you uncheck the box. Measurements and writing to file also stops if you exit the "Monitor temperatures" screen or close the app.<br>
-        The saved file will look like<br><code>YYYY-MM-DD hh:mm:ss|temp0|temp1|temp3|temp4|temp5<br>
+        The saved file will look like<br><div class="plain-text">YYYY-MM-DD hh:mm:ss|temp0|temp1|temp3|temp4|temp5<br>
 2017-06-09 13:52:15|42.493|41.302|41.896|40.12|41.896<br>
 2017-06-09 13:52:45|46.116|43.692|44.295|40.12|43.692<br>
-2017-06-09 13:53:15|46.728|45.507|47.958|41.896|47.958</code><br>
-        Simply open it in Excel, Google Calc or whatever other spreadsheets and mark the pipe sign "|" as separator. I will improve it later.
+2017-06-09 13:53:15|46.728|45.507|47.958|41.896|47.958</div>
+        Simply open it in Google Spreadsheet, Excel, Libre/OpenOffice Calc or whatever other spreadsheet and mark the pipe sign "|" as separator. I will improve it later.
         
     </p>
     <p><H3>My WiFi address</H3>
@@ -97,6 +105,7 @@
     <li><strong>Install Viper4Android</strong>: Viper4Android is the leading audio enhancement tool. It will improve your sound quality but don't expect miracles as the used DAC in your Joying is not of high quality (see also the SofiaServer USBDAC version).</li>
     <!-- <li><strong>Google Settings</strong>: Joying has its own Settings.apk with some added options and some removed options, if you compare it to the stock android Settings.apk.  They have identical package names being "com.android.settings". You can't install 2 of the same packages (= same package names, not necessarily same apk name).<br>This Google Settings.apk has internally been completely changed to "com.android.googlesettings" and will be installed next to the Joying Settings.apk. This means that you will have 2 Settings apps.<br>Please be aware of that.</li> -->
     </ul>
-
+</td></tr></table>
+</center>
 </body>
 </html>
