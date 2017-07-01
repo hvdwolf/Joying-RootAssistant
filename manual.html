@@ -88,7 +88,7 @@
     <li><strong>Enable adb over WiFi</strong> or <strong>Disable adb over WiFi</strong>: Depending on the current setting of the unit.<br>adb over WiFi is very handy, as you can access your unit from a distance. At the same time it is a security risk. When enabled, everyone able to "join" your WiFi network can within a minute access your unit on root level without even having to specify a password.<br> A good measure is always a strong password on your WiFi network (or your hot spot). This makes it off course much harder to hack. But if you don't need it, switch it off.</li>
     <li><strong>Rooting / Busybox/ Rsync</strong></li>
     <ul>
-        <li>Update my SuperSU</br>
+        <li>Update my SuperSU<br>
         <strong><i>This app can not root your unit!</i></strong> This app can only update a unit that already has SuperSU installed. SuperSU is automatically updated from the Play Store, but the accompanying binaries and libraries a This are not. This option installs the latest SuperSu apk, SE linux policies and another su binary.</li>
         <li><strong>Update busybox:</strong> The busybox version installed on the Joying units is old and buggy. This will install a better one. It is strongly advised to install thisversion and it is a requirement for Viper4Android!</li>
         <li><strong>Install rsync:</strong> rsync can be used for all kind of things. See for yourself.</li>
@@ -103,10 +103,19 @@
         <li>USBDAC-NoKill: Like the USBDAC but also with the NoKill feature.</li>
 	    <li>Launcher.sh: If you install the Custom Key Mods (aka Steering wheel mods) version, you need to have a launcher.sh. The default launcher.sh is installed, but probably you need something slightly different. That means that you need to modify it. After modifying you need to place it in the root of the internal memory of your unit. Internal memory is also known as as /sdcard. Then the apk can find it and install it in the right location.</li>
     </ul>
-    <li><strong>Alter DPI (lcd_density)</strong>: The default DPI setting for all the 1024x600 Joying units is 160. This option gives you the opportunity to select another DPI value.</li>
+    <li><strong>Install Android or Joying Settings apk</strong>: Joying has its own Settings.apk. It has a few specific Joying options, but it also has some standard options removed like Bluetooth Settings, mount/unmount options for SDcards and the like. The Joying Settings.apk and the Android Settings.apk have identical package names being "com.android.settings". You can't install 2 of the same packages (= same package names, not necessarily same apk name). This option enables you to install one or the other and switch back and forth (with reboot in between).</li>
     <li><strong>Install Viper4Android</strong>: Viper4Android is the leading audio enhancement tool. It will improve your sound quality but don't expect miracles as the used DAC in your Joying is not of high quality (see also the SofiaServer USBDAC version).</li>
-    <!-- <li><strong>Google Settings</strong>: Joying has its own Settings.apk with some added options and some removed options, if you compare it to the stock android Settings.apk.  They have identical package names being "com.android.settings". You can't install 2 of the same packages (= same package names, not necessarily same apk name).<br>This Google Settings.apk has internally been completely changed to "com.android.googlesettings" and will be installed next to the Joying Settings.apk. This means that you will have 2 Settings apps.<br>Please be aware of that.</li> -->
-    </ul>
+    <li><strong>Other Tools & Tweaks:</strong>
+        <ul>
+            <li>Expand hosts file to prevent ads and malware: See see <a href="http://winhelp2002.mvps.org/hosts.htm">http://winhelp2002.mvps.org/hosts.htm</a></li>
+            <li>Monitor temperatures (identical to the one in the top-left menu)</li>
+            <li>Reboot: Guess what this does ;)</li>
+        </ul>
+    </li>
+    <li><strong>Alter DPI (lcd_density)</strong>: The default DPI setting for all the 1024x600 Joying units is 160. This option gives you the opportunity to select another DPI value.</li>
+Monitor temperatures (identical to the one in the top-left menu)
+    
+    <li>Reboot: Guess what this does ;)</li></ul>
 </td></tr></table>
 </center>
 </body>
