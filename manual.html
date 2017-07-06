@@ -84,6 +84,7 @@
     <H2>The options from the main screen.</H2>
     <p>Again: If you do accept you will see:<br><a href="images/mainscreen.jpg"><img src="images/thumb-mainscreen.jpg"></a></p>
     <p>Note that some options are buttons and others are "list pickers" (drop-down options).</p>
+    <p>Note also that the buttons/listpickers that allow you to install mods, also contain the original Joying apk. In case it doesn't work for you, you can always install/restore the Joying original.</p>
     <ul>
     <li><strong>Enable adb over WiFi</strong> or <strong>Disable adb over WiFi</strong>: Depending on the current setting of the unit.<br>adb over WiFi is very handy, as you can access your unit from a distance. At the same time it is a security risk. When enabled, everyone able to "join" your WiFi network can within a minute access your unit on root level without even having to specify a password.<br> A good measure is always a strong password on your WiFi network (or your hot spot). This makes it off course much harder to hack. But if you don't need it, switch it off.</li>
     <li><strong>Rooting / Busybox/ Rsync</strong></li>
@@ -93,16 +94,19 @@
         <li><strong>Update busybox:</strong> The busybox version installed on the Joying units is old and buggy. This will install a better one. It is strongly advised to install thisversion and it is a requirement for Viper4Android!</li>
         <li><strong>Install rsync:</strong> rsync can be used for all kind of things. See for yourself.</li>
     </ul>
-    <li><strong>Radio Mods</strong>: This listpicker gives a couple of options to install different colored Radios aps.</li>
-    <li><strong>SofiaServer Mods</strong><br><a href="images/sofiaserver.jpg"><img src="images/thumb-sofiaserver.jpg"></a></li>
+    <li><strong>Radio Mods</strong><br><i>Android 6.0.1 example screen</i><br><a href="images/RadioMod601.jpg"><img src="images/thumb-RadioMod601.jpg"></a><br>This Radio Mods listpicker gives a couple of options to install different colored Radios apps.<br><br>
+    </li>
+    <li><strong>SofiaServer Mods</strong><br><i>Android 6.0.1 example screen</i><br><a href="images/sofiaserver.jpg"><img src="images/thumb-sofiaserver.jpg"></a></li>
     <ul>
         <li>NoKill: When the unit goes into sleep mode, all apps are killed apart from a few "designated" apps. This version makes sure that not one single app is killed when going into sleep mode.</li>
         <li>NoKill SRC hardcoded->GoogleVoice: This one has the NoKill feature. Additionally the SRC button of your steering wheel keys is hardcoded to start Google Voice (when installed) on your unit. Google voice can then be used to start a phone call, the radio, music player, navigation, etc. with a voice command.</li>
         <li>NoKill + Steering wheel mods: This one has the NoKill feature and (almost) complete functionality to assign commands or apks to your steering wheel keys and/or unit hardware keys. <strong>Note</strong>: It might require that you modify the default launcher.sh for your specific purpose.</li>
         <li>USBDAC only: This version enables the audio output to be improved via a USB DAC (one that is supported by the unit).</li>
         <li>USBDAC-NoKill: Like the USBDAC but also with the NoKill feature.</li>
-	    <li>Launcher.sh: If you install the Custom Key Mods (aka Steering wheel mods) version, you need to have a launcher.sh. The default launcher.sh is installed, but probably you need something slightly different. That means that you need to modify it. After modifying you need to place it in the root of the internal memory of your unit. Internal memory is also known as as /sdcard. Then the apk can find it and install it in the right location.</li>
+	    <li>Launcher.sh: If you install the Custom Key Mods (aka Steering wheel mods) version, you need to have a launcher.sh. The default launcher.sh is installed, but probably you need something slightly different. That means that you need to modify it. After modifying you need to place it in the root of the internal memory of your unit. Internal memory is also known as as /sdcard. Then the apk can find it and install it in the right location.<br><br></li>
     </ul>
+    <li><strong>Other Mods</strong><br><i>Android 6.0.1 example screen</i><br><a href="images/OtherMods601.jpg"><img src="images/thumb-OtherMods601.jpg"></a><br>This Other Mods listpicker gives a couple of options to install different colored Mods for the Bluetooth app, Music Player and Video Player.<br><br>
+    </li>
     <li><strong>Install Android or Joying Settings apk</strong>: Joying has its own Settings.apk. It has a few specific Joying options, but it also has some standard options removed like Bluetooth Settings, mount/unmount options for SDcards and the like. The Joying Settings.apk and the Android Settings.apk have identical package names being "com.android.settings". You can't install 2 of the same packages (= same package names, not necessarily same apk name). This option enables you to install one or the other and switch back and forth (with reboot in between).</li>
     <li><strong>Install Viper4Android</strong>: Viper4Android is the leading audio enhancement tool. It will improve your sound quality but don't expect miracles as the used DAC in your Joying is not of high quality (see also the SofiaServer USBDAC version).</li>
     <li><strong>Other Tools & Tweaks:</strong>
