@@ -41,8 +41,8 @@ REM Do the copying
 ..\win-adb\adb push resources/supolicy /sdcard/supersu/
 
 REM internal copy
-..\win-adb\adb shell "su -c mkdir -p /data/supersu"
-..\win-adb\adb shell "su -c cp /sdcard/supersu/* /data/supersu/"
+..\win-adb\adb shell "mkdir -p /data/supersu"
+..\win-adb\adb shell "cp /sdcard/supersu/* /data/supersu/"
 
 REM Do the actual installation
 ..\win-adb\adb shell chmod 0755 /data/supersu/install.sh
