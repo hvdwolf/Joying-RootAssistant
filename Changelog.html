@@ -28,6 +28,28 @@
 
 
     <ul>
+        <li>ToDo:
+            <ul>
+                <li>Improve logging for better error detection.</li>
+                <li>Build in "Sharing" option so you can easily share your temperature measurement files, log files to (g)mail, drive, dropbox, whatever.</li>
+                <li>Expand network detection options. It now only looks for wifi. Will check as well for eth0.</li>
+                <li>Add option to mount/unmount SD-cards.</li>
+                <li>(Maybe) Add option to format SD-cards.</li>
+            </ul>
+        </li>
+        <li>22 July 2017, V 1.2
+            <ul>
+                <li>Note: SofiaServer binaries still based on 25 May version, but they should function also on 07 July ROM.</li>
+                <li>Added Treel's multi-pairing BT app to replace Joyings crippled, limited apk (5.1.1 and 6.0.1 version)</li>
+                <li>Corrected Settings.apk install. It did function but it installed too much.</li>
+                <li>Added option to wipe /data. BE CAREFUL: Actually this is a "restore to factory defaults" option. It will therefore also remove this apk. I did no test this part.</li>
+                <li>Added option to wipe /sdcard. BE Careful: This is internal memory storage. NOT one of your real sd-cards.</li>
+                <li>Added a lot of logging options. Output is written to /sdcard/JET-YYYYMMDD.log. Every day a new log is created (only when you start the app), multiple uses on one day will add to the daily log. Note that this needs to be improvedin future versions.</li>
+                <li>Check for new version upon startup with ability to download and install new version (Will of course start to work as of next release).</li>
+                <li>Add version number as well to bottom line which already displayed Android version.</li>
+            </ul>
+            <p> </p>
+        </li>
         <li>06 July 2017, V 1.1
             <ul>
                 <li>Add the Radio Mod of Sanangel (Credits: Sanangel)</li>
@@ -40,6 +62,7 @@
                 <li>Clean up/Remove unnecessary assets.</li>
                 <li>Correct shape of "Install Android .." from square to rounded.</li>
             </ul>
+            <p> </p>
         </li>
         <li>01 July 2017, V 1.02
             <ul>
@@ -49,6 +72,7 @@
                 <li>Add reboot option to "Other Tools &amp; Tweaks" button.</li>
                 <li>Integrate reboot option in feedback popup for the actions where a reboot is necesssary.</li>
             </ul>
+            <p> </p>
         </li>
         <li>28 June 2017, V 1.01
             <ul><li>Try to improve robustness of Radio Mod install, especially on 6.0.1. (Stop Radio app, remove Dalvik cache for Radio, push modded Radio apk)</li>
@@ -57,6 +81,8 @@
                 <li>Alter DPI: 180 DPI option forgotten in 6.0.1 options.</li>
                 <li>Make temperature monitoring file a real classic csv file: "value 1","value 2","value 3"</li>
             </ul>
+            <p> </p>
+        </li>
         <li>27 Jun 2017: First version.</li>
     </ul>
 </td></tr></table>
