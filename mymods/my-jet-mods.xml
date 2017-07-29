@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
-<thisfile>This file can be used to install your own modsor distribute your mods in a zip to other users
-</thisfile>
+<thisfile>This file can be used to install your own mods or distribute your mods in a zip to other users</thisfile>
 <remarks>
 description	- Description in the "My Mods" pull down menu
 android		- The android version; currently 5.1.1, 6.0.1 or universal (apk works on any version).
