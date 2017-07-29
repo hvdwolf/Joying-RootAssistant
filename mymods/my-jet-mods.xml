@@ -12,6 +12,7 @@ odex		- the odex that needs to be installed. Leave empty in case only a modded a
 orgpath		- the folder on the sdcard from where the apk (and/or odex) should be installed, like "/sdcard/myFantasticMod/".
 		Should end with a "/" and pay attention to uppercase/lowercase!!
 installpath	- Folder location where the apk needs to be pushed to (in case of odex this will be arranged automatically)
+reboot		- is a reboot necessary (yes/no). If yes, a reboot notification will be displayed with the reboot option behind it.
 
 Examples below!
 Android Settings install with odex, Joying Settings install (doesn't have an odex)
@@ -25,6 +26,7 @@ Radio mod install, Reinstall original joying radio
 	<odex>Settings.odex</odex>
 	<orgpath>/sdcard/SettingsMod/</orgpath>
 	<installpath>/system/priv-app/Settings</installpath>
+	<reboot>yes</reboot>
 </apk>
 <apk>
 	<description>Joying Settings.apk</description>
@@ -34,6 +36,7 @@ Radio mod install, Reinstall original joying radio
 	<odex></odex>
 	<orgpath>/sdcard/JoyingSettings/</orgpath>
 	<installpath>/system/priv-app/Settings</installpath>
+	<reboot>yes</reboot>
 </apk>
 <apk>
 	<description>BlueWhite Radio</description>
@@ -43,6 +46,7 @@ Radio mod install, Reinstall original joying radio
 	<odex></odex>
 	<orgpath>/sdcard/myradiomod/</orgpath>
 	<installpath>/system/app/JY-1-C9-Radio-V1.0</installpath>
+	<reboot>yes</reboot>
 </apk>
 <apk>
 	<description>Original Joying Radio</description>
@@ -52,4 +56,5 @@ Radio mod install, Reinstall original joying radio
 	<odex></odex>
 	<orgpath>/sdcard/orgradio/</orgpath>
 	<installpath>/system/app/JY-1-C9-Radio-V1.0</installpath>
+	<reboot>yes</reboot>
 </apk>
