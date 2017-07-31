@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+<head>
+    <title>Root your unit</title>
+    <META NAME="description" LANG="EN" CONTENT="Joying tooling">
+    <META NAME="keywords" LANG="EN" CONTENT="Joying, Intel, Sofia 3GR, rooting, mods, busybox, SofiaServer, Radio, Viper4Android">
+    <META NAME="description" LANG="NL" CONTENT="Joying Tooling">
+    <META NAME="keywords" LANG="NL" CONTENT="Joying, Intel, Sofia 3GR, rooting, mods, busybox, SofiaServer, Radio, Viper4Android">
+    <META NAME="keywords" LANG="DE" CONTENT="Joying, Intel, Sofia 3GR, rooting, mods, busybox, SofiaServer, Radio, Viper4Android">
+    <META NAME="keywords" LANG="FR" CONTENT="Joying, Intel, Sofia 3GR, rooting, mods, busybox, SofiaServer, Radio, Viper4Android">
+    <META NAME="keywords" LANG="ES" CONTENT="Joying, Intel, Sofia 3GR, rooting, mods, busybox, SofiaServer, Radio, Viper4Android">
+
+    <meta name="author" content="Harry">
+    <meta charset="utf-8">
+    <style  type="text/css"> 
+        body {font-family: Arial, Helvetica, Sans-serif;}
+    </style>
+<link rel="shortcut icon" href="images/favicon.ico" >
+
+<link rel="STYLESHEET" type="text/css" href="css/styles.css">
+
+</head>
+    <body bgcolor="#FFFFF8">
+        <center>
+        <table border="0" width="940"><tr><td>
+            <!-- First  "menu" -->
+            <p class="menu"><a href="https://hvdwolf.github.io/Joying-RootAssistant/">Home</a> &nbsp;&nbsp;&nbsp; <a href="https://github.com/hvdwolf/Joying-RootAssistant/releases">Downloads</a> &nbsp;&nbsp;&nbsp;  <a href="manual.html">Manual</a> &nbsp;&nbsp;&nbsp;  <a href="credits.html">Credits</a> &nbsp;&nbsp;&nbsp;  <a href="https://github.com/hvdwolf/Joying-RootAssistant/">Source code</a></p>
+
+
+        <center><H2>Root your unit</H2></center>
+<!--        In a few lines:<br>
+        <strong>head unit:</strong>
+        <OL>
+            <li>If you do not have it already, you should download my apk from the <a href="https://github.com/hvdwolf/Joying-RootAssistant/releases">Releases</a> page onto your head unit.</li>
+            <li>Start the apk. As the unit is not rooted yet, it will tell you so.</li>
+            <li>If you are on 6.0.1, You first need to enable adb over WiFi</li>
+            <li>Check the WiFi address of your unit</li>
+        </OL>
+        <strong>On your pc/laptop:</strong>
+        <OL>
+            <li>Download the latest SuperSu version from the <a href="https://github.com/hvdwolf/Joying-RootAssistant/releases">Releases</a> page onto your pc/laptop.</li>
+            <li>Unzip the downloaded SuperSU<!-- <strong>with internal paths</strong></li>
+            <li>Run the relevant copy_install script with the ip-adddress of the unit.</li>
+        </OL> -->
+        
+        <p><br></p>
+        <p><H2>On your head unit</H2>
+            <OL>
+                <li>If you do not have it already, you should download my apk from the <a href="https://github.com/hvdwolf/Joying-RootAssistant/releases">Releases</a> page on to your head unit.<br>When you start the apk you will see the following screen:<br>
+                <img src="images/not_rooted.jpg" width="800"><br><br>
+                Your unit is not fully rooted. You already knew this otherwise you would not try to root it. Simply press OK.<br><br></li>
+                <li>Next you will see:<br>
+                <img src="images/mainscreen_not_rooted.jpg" width="800"><br>
+                On Android 6.0.1 adb over wifi is by default disabled. This will be displayed by the button "Enable adb over WiFi". To root your unit you need to have adb over Wifi enabled.
+                If you tap the button, it will be enabled.<br>
+                If the button mentions "Disable adbover Wifi", you don't have to do anything.</li>
+                <li>Now you need to know the ip-address of your head unit. Tap the top-left menu button <img src="images/top-left-icon.jpg" HEIGHT="30%">&nbsp; and select the option "My WiFi address".<br>You need it for the script on your laptop/pc.<br>You will see something like this:<br><img src="images/WiFiSettings.jpg" width="800"></li>
+            </OL>
+        </p>
+        <p><H2>On your pc:</H2><br></p>
+            <Strong>Linux:</Strong> First install adb via your package manager (like on Ubuntua/Debian like distributions: "sudo apt-get install adb")
+            <OL>
+                <li>Download the latest SuperSu version from the <a href="https://github.com/hvdwolf/Joying-RootAssistant/releases">Releases</a> page onto your pc/laptop. It will be called something like <strong>SuperSU V x.yz</strong>.</li>
+                <li>Unzip it somewhere on your pc/laptop <strong>and keep the internal folder structure instact</strong>, so not all files in one folder but with sub-folders.</li>
+                <UL>
+                    <li>On Windows: Run CMD.exe as Administrator.</li>
+                    <li>On Linux like OSes: Open a terminal.</li>
+                </UL>
+                <li>Change to the folder where you unzipped the files and change to the folder where the copy_install.sh and copy_install.bat are located.</li>
+                <UL>
+                    <li>On Windows: Run the copy_install.bat script with the IP address of your Head Unit as a parameter: copy_install.bat 192.168.178.50 (for example)</li>
+                    <li>On linux: Run the copy_install.sh script with the IP address of your Head Unit as a parameter:./copy_install.sh 192.168.178.50 (for example)</li>
+                </UL>
+                <li>Wait until the script finishes.</li>
+                <li>Reboot your Head Unit.</li>
+            </OL>
+            You should now have the SuperSU application working with modified SELinux policy settings. This will allow you to give other apps root access as well.
+        </td></tr></table>
+</center>
+</body>
+</html>
