@@ -21,6 +21,7 @@ if "%1"=="" (
 REM Setup the connection
 ..\win-adb\adb kill-server
 ..\win-adb\adb connect %1
+timeout 3 > NUL
 ..\win-adb\adb root
 ..\win-adb\adb connect %1
 timeout 3 > NUL

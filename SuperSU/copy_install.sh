@@ -14,6 +14,7 @@ set -x
 # Setup the connection
 adb kill-server
 adb connect $1
+sleep 2
 adb root
 adb connect $1
 sleep 2
