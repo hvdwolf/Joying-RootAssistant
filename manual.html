@@ -64,19 +64,10 @@
     </div> -->
     <table border="0" cellpadding="10">
         <tr><th><img src="images/top-left-icon.jpg" HEIGHT="70%">&nbsp;top-left menu (when tapped upon)</th><th>top-right menu (when tapped upon)&nbsp;<img src="images/top-right-icon.jpg" HEIGHT="70%"></th></tr>
-        <tr><td><img src="images/top_left_menu.jpg"></td><td><a href="images/about.jpg"><img src="images/thumb-about.jpg"></a></td></tr>
+        <tr><td><img src="images/thumb-top_left_menu.jpg"></td><td><a href="images/about.jpg"><img src="images/thumb-about.jpg"></a></td></tr>
     </table>
     
-    <p><H3>Temperature monitoring</H3><a href="images/tempmon.jpg"><img src="images/thumb-tempmon.jpg"></a><br>
-        This option reads the 5 temperature sensors upon opening the screen. It doesn't need root access.<br>After checking the checkbox "repeat every 30 seconds", the "Refresh" button is disabled and the option to write these measurements to file will be enabled. This file is saved to /sdcard (internal as the Joying file manager calls it) and has the name "YearMonthDate_HourMinutesSeconds.csv", meaning for example: "20171208_163315.csv", with hours in 24 hours format. The csv file is comma separated.<br>As long as you are in the "Monitor temperatures" screen, even if the app is in the background, the recording and saving will continue. That is, until the android task manager might kill it. Writing to file stops if you uncheck the box. Measurements and writing to file also stops if you exit the "Monitor temperatures" screen or close the app.<br>
-        The saved file will look like<br><div class="plain-text">"YYYY-MM-DD hh:mm:ss","temp0","temp1","temp3","temp4","temp5"<br>
-"2017-06-28 16:46:06","35.476","33.202","34.335","30.404","32.077"<br>
-"2017-06-28 16:46:36","33.767","33.202","34.335","32.077","33.767"<br>
-"2017-06-28 16:47:07","33.767","34.335","34.335","32.077","33.767"<br>
-</div>
-        Simply open it in Google Spreadsheet, Excel, Libre/OpenOffice Calc or whatever other spreadsheet and mark the comma "," as separator. The fields are extra double-quotes surrounded to compensate for changing decimal separator ("." or ",").
-        
-    </p>
+    
     <p><H3>My WiFi address</H3>
         If you click the "My WiFi address" from the top-left menu,you will see something like:<br>
         <a href="images/WiFiSettings.jpg"><img src="images/thumb-WiFiSettings.jpg"></a>
@@ -102,19 +93,30 @@
         <li>NoKill: When the unit goes into sleep mode, all apps are killed apart from a few "designated" apps. This version makes sure that not one single app is killed when going into sleep mode.</li>
         <li>NoKill SRC hardcoded->GoogleVoice: This one has the NoKill feature. Additionally the SRC button of your steering wheel keys is hardcoded to start Google Voice (when installed) on your unit. Google voice can then be used to start a phone call, the radio, music player, navigation, etc. with a voice command.</li>
         <li>NoKill + Steering wheel mods: This one has the NoKill feature and (almost) complete functionality to assign commands or apks to your steering wheel keys and/or unit hardware keys. <strong>Note</strong>: It might require that you modify the default launcher.sh for your specific purpose.</li>
-        <li>USBDAC only: This version enables the audio output to be improved via a USB DAC (one that is supported by the unit).</li>
-        <li>USBDAC-NoKill: Like the USBDAC but also with the NoKill feature.</li>
+        <!-- <li>USBDAC only: This version enables the audio output to be improved via a USB DAC (one that is supported by the unit).</li>
+        <li>USBDAC-NoKill: Like the USBDAC but also with the NoKill feature.</li> -->
 	    <li>Launcher.sh: If you install the Custom Key Mods (aka Steering wheel mods) version, you need to have a launcher.sh. The default launcher.sh is installed, but probably you need something slightly different. That means that you need to modify it. After modifying you need to place it in the root of the internal memory of your unit. Internal memory is also known as as /sdcard. Then the apk can find it and install it in the right location.<br><br></li>
     </ul>
     <li><strong>Other Mods</strong><br><i>Android 6.0.1 example screen</i><br><a href="images/OtherMods601.jpg"><img src="images/thumb-OtherMods601.jpg"></a><br>This Other Mods listpicker gives a couple of options to install different colored Mods for the Bluetooth app, Music Player and Video Player.<br><br>
     </li>
     <li><strong>Install Android or Joying Settings apk</strong>: Joying has its own Settings.apk. It has a few specific Joying options, but it also has some standard options removed like Bluetooth Settings, mount/unmount options for SDcards and the like. The Joying Settings.apk and the Android Settings.apk have identical package names being "com.android.settings". You can't install 2 of the same packages (= same package names, not necessarily same apk name). This option enables you to install one or the other and switch back and forth (with reboot in between).</li>
     <li><strong>Install Viper4Android</strong>: Viper4Android is the leading audio enhancement tool. It will improve your sound quality but don't expect miracles as the used DAC in your Joying is not of high quality (see also the SofiaServer USBDAC version).</li>
-    <li><strong>Other Tools & Tweaks:</strong>
+    <li><strong>Other Tools & Tweaks:</strong><br>
+        <a href="images/several_tools.jpg"><img src="images/thumb-several_tools.jpg"></a><br><br>
         <ul>
-            <li>Expand hosts file to prevent ads and malware: See see <a href="http://winhelp2002.mvps.org/hosts.htm">http://winhelp2002.mvps.org/hosts.htm</a></li>
-            <li>Monitor temperatures (identical to the one in the top-left menu)</li>
-            <li>Reboot: Guess what this does ;)</li>
+            <li><strong>Expand hosts file</strong> to prevent ads and malware: See see <a href="http://winhelp2002.mvps.org/hosts.htm">http://winhelp2002.mvps.org/hosts.htm</a></li>
+            <li><strong>Core temperature and core frequency monitoring</strong><br><a href="images/tempmon.jpg"><img src="images/thumb-tempmon.jpg"></a><br>
+        This option reads the 5 temperature sensors (4 CPU and 1 GPU) and the 4 core frequencies upon opening the screen. <br>After checking the checkbox "repeat every 30 seconds", the "Refresh" button is disabled and the option to write these measurements to file will be enabled. This file is saved to /sdcard (internal as the Joying file manager calls it) and has the name "YearMonthDate_HourMinutesSeconds.csv", meaning for example: "20171208_163315.csv", with hours in 24 hours format. The csv file is comma separated.<br>As long as you are in the "Monitor temperatures" screen, even if the app is in the background, the recording and saving will continue. That is, until the android task manager might kill it. Writing to file stops if you uncheck the box. Measurements and writing to file also stops if you exit the "Monitor temperatures" screen or close the app.<br>
+        The saved file will look like<br><div class="plain-text">"YYYY-MM-DD hh:mm:ss","coretemp1","coretemp2","coretemp3","coretemp4","coretemp5 (gpu)","corefreq0","corefreq1","corefreq2","corefreq3"<br>
+"2017-08-09 13:46:35","44.9","40.71","41.302","40.12","40.71","1040","1040","1040","1040"<br>
+"2017-08-09 13:47:04","41.896","40.71","44.295","40.12","40.71","1040","1040","1040","1040"<br>
+"2017-08-09 13:47:36","43.692","42.493","43.091","40.12","40.71","1040","1040","1040","1040"<br>
+"2017-08-09 13:48:07","44.9","44.9","46.728","43.692","44.295","1040","1040","1040","1040"<br>
+"2017-08-09 13:48:38","44.9","45.507","44.9","43.692","44.295","1040","1040","1040","1040"<br>
+</div>
+        Simply open it in Google Spreadsheet, Excel, Libre/OpenOffice Calc or whatever other spreadsheet and mark the comma "," as separator. The fields are extra double-quotes surrounded to compensate for changing decimal separator ("." or ",").</li>
+            <li><strong>Reboot</strong>: This one does a full reboot.</li>
+            <li><strong>Hot Reboot</strong>: Also called "zygote" reboot. This does a restart of the graphical environment. Normally this is enough for all apk related stuff.</li>
         </ul>
     </li>
     <li><strong>Alter DPI (lcd_density)</strong>: The default DPI setting for all the 1024x600 Joying units is 160. This option gives you the opportunity to select another DPI value.</li>
