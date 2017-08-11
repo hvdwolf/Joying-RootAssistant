@@ -31,7 +31,6 @@
         <li>ToDo:
             <ul>
                 <li>Add button "My Mods". This option can be used to install your own mods or distribute your mods in a zip to other users. Needs a local xml file (<a href="https://raw.githubusercontent.com/hvdwolf/Joying-RootAssistant/apk/mymods/my-jet-mods.xml" target="mymods">example</a>)</li>
-                <li><strike>Build in "Sharing" option so you can easily share your temperature measurement files, log files to (g)mail, drive, dropbox, whatever.</strike> NOT: There are already 10 million apps that can do this.</li>
                 <li>Expand network detection options. It now only looks for wifi. Will check as well for eth0.</li>
                 <li>Add option to mount/unmount SD-cards.</li>
                 <li>(Maybe) Add option to format SD-cards.</li>
@@ -50,6 +49,7 @@
             <ul>
                 <li>I use the rom build date in the ROMS as marker for installing certain apks (For example: the 07 July release has a zip date of 5 July, but a build date (ro.builddate) of 29 June 2017). Joying publishes their releases via their <a href="https://www.carjoying.com/blog/joying-head-unit-after-sale-support/59.html">Blog</a>. However, it turns out though that they also publish "intermediate" builds when sending their units to customers. We already detected a 15 June 2017 ROM as well. That requires extra "if-then-else" statements to check on these build dates.</li>
                 <li>Expanded the Temperature measurements screen. It now meausures temperature and CPU frequencies. And it can still save this every 30 seconds to file. As a direct read of CPU frequencies the way I do it also requires root access, the option has now been removed from the top-left menu and placed behind the "Tools and Tweaks" button.</li>
+                <li>Builtin "Sharing" option (top-left menu) so you can easily share your logs (to be further expanded).</li>
             </ul>
              <p> </p>
        </li>
