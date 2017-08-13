@@ -59,7 +59,7 @@ Radio mod install, Reinstall original joying radio
 	<rombuilddate>universal</rombuilddate>
 	<file>JY-1-C9-Radio-V1.0.apk</file>
 	<odex></odex>
-	<linktype>file</linktype>
+	<linktype>web</linktype>
 	<origin>https://github.com/hvdwolf/Joying-RootAssistant/raw/apk/Radio-Mod/6.0.1/Original/</origin>
 	<installpath>/system/app/JY-1-C9-Radio-V1.0</installpath>
 	<reboot>yes</reboot>
