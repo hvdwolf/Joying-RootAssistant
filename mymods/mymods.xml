@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
-<thisfile>This file can be used to install your own mods or distribute your mods in a zip to other users</thisfile>
+<thisfile>This file can be used to install your own modsor distribute your mods in a zip to other users
+</thisfile>
 <remarks>
 description	- Description in the "My Mods" pull down menu
 android		- The android version; currently 5.1.1, 6.0.1 or universal (apk works on any version).
@@ -8,8 +9,10 @@ rombuilddate	- The date the ROM was built. NOT the release date. This can be fou
 		rombuilddate can also be universal (works on any sub version of the mentioned android version).
 file		- The apk that needs to be installed
 odex		- the odex that needs to be installed. Leave empty in case only a modded apk needs to be installed.
-orgpath		- the folder on the sdcard from where the apk (and/or odex) should be installed, like "/sdcard/myFantasticMod/".
-		Should end with a "/" and pay attention to uppercase/lowercase!!
+linktype	- web or file. web requires in origin something like "http://full_path_to_apk/" (or https://). 
+		file requires something like "/sdcard/full_path_to_apk/".
+origin		- the location from where the apk (and/or odex) should be downloaded or copied, and then installed, like "/sdcard/myFantasticMod/".
+		Should end with a "/". Pay attention to uppercase/lowercase!!
 installpath	- Folder location where the apk needs to be pushed to (in case of odex this will be arranged automatically)
 reboot		- is a reboot necessary (yes/no). If yes, a reboot notification will be displayed with the reboot option behind it.
 
@@ -23,7 +26,8 @@ Radio mod install, Reinstall original joying radio
 	<rombuilddate>20170524</rombuilddate>
 	<file>Settings.apk</file>
 	<odex>Settings.odex</odex>
-	<orgpath>/sdcard/SettingsMod/</orgpath>
+	<linktype>file</linktype>
+	<origin>/sdcard/SettingsMod/</origin>
 	<installpath>/system/priv-app/Settings</installpath>
 	<reboot>yes</reboot>
 </apk>
@@ -33,7 +37,8 @@ Radio mod install, Reinstall original joying radio
 	<rombuilddate>20170524</rombuilddate>
 	<file>Settings.apk</file>
 	<odex></odex>
-	<orgpath>/sdcard/JoyingSettings/</orgpath>
+	<linktype>file</linktype>
+	<origin>/sdcard/JoyingSettings/</origin>
 	<installpath>/system/priv-app/Settings</installpath>
 	<reboot>yes</reboot>
 </apk>
@@ -43,7 +48,8 @@ Radio mod install, Reinstall original joying radio
 	<rombuilddate>universal</rombuilddate>
 	<file>JY-1-C9-Radio-V1.0.apk</file>
 	<odex></odex>
-	<orgpath>/sdcard/myradiomod/</orgpath>
+	<linktype>file</linktype>
+	<origin>/sdcard/myradiomod/</origin>
 	<installpath>/system/app/JY-1-C9-Radio-V1.0</installpath>
 	<reboot>yes</reboot>
 </apk>
@@ -53,7 +59,8 @@ Radio mod install, Reinstall original joying radio
 	<rombuilddate>universal</rombuilddate>
 	<file>JY-1-C9-Radio-V1.0.apk</file>
 	<odex></odex>
-	<orgpath>/sdcard/orgradio/</orgpath>
+	<linktype>file</linktype>
+	<origin>https://github.com/hvdwolf/Joying-RootAssistant/raw/apk/Radio-Mod/6.0.1/Original/</origin>
 	<installpath>/system/app/JY-1-C9-Radio-V1.0</installpath>
 	<reboot>yes</reboot>
 </apk>
