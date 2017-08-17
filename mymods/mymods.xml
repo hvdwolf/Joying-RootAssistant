@@ -2,11 +2,14 @@
 <thisfile>This file can be used to install your own modsor distribute your mods in a zip to other users
 </thisfile>
 <remarks>
+This remarks section is not necessary. It is only here for explanation. It will not be read/used by the apk.
 description	- Description in the "My Mods" pull down menu
 android		- The android version; currently 5.1.1, 6.0.1 or universal (apk works on any version).
 rombuilddate	- The date the ROM was built. NOT the release date. This can be found in the unzipped 5009_60.zip under /system/build.prop.
-		For example: The 6.0.1 07 July ROM mentions: "ro.build.date=2017-06-29 11:43:58 Thursday". This means rombuilddate is 20170629.
-		rombuilddate can also be universal (works on any sub version of the mentioned android version).
+				For example: The 6.0.1 07 July ROM mentions: "ro.build.date=2017-06-29 11:43:58 Thursday". This means rombuilddate is 20170629.
+				rombuilddate can also be universal (works on any sub version of the mentioned android version).
+modtype		- Is it a "radio/videoplayer/musicplayer/bluetooth/sofiaserver/settings/other" mod. This is important. In case of a radio for example,
+			some automatic checks can be done. Same for the other "known" mods. Only "other" will be dealt with in another way.
 file		- The apk that needs to be installed
 odex		- the odex that needs to be installed. Leave empty in case only a modded apk needs to be installed.
 linktype	- web or file. web requires in origin something like "http://full_path_to_apk/" (or https://). 
@@ -24,6 +27,7 @@ Radio mod install, Reinstall original joying radio
 	<description>Default Android Settings.apk</description>
 	<android>6.0.1</android>
 	<rombuilddate>20170524</rombuilddate>
+	<modtype>settings</modtype>
 	<file>Settings.apk</file>
 	<odex>Settings.odex</odex>
 	<linktype>file</linktype>
@@ -35,6 +39,7 @@ Radio mod install, Reinstall original joying radio
 	<description>Joying Settings.apk</description>
 	<android>6.0.1</android>
 	<rombuilddate>20170524</rombuilddate>
+	<modtype>settings</modtype>
 	<file>Settings.apk</file>
 	<odex></odex>
 	<linktype>file</linktype>
@@ -46,6 +51,7 @@ Radio mod install, Reinstall original joying radio
 	<description>BlueWhite Radio</description>
 	<android>6.0.1</android>
 	<rombuilddate>universal</rombuilddate>
+	<modtype>radio</modtype>
 	<file>JY-1-C9-Radio-V1.0.apk</file>
 	<odex></odex>
 	<linktype>file</linktype>
@@ -57,8 +63,9 @@ Radio mod install, Reinstall original joying radio
 	<description>Original Joying Radio</description>
 	<android>6.0.1</android>
 	<rombuilddate>universal</rombuilddate>
+	<modtype>radio</modtype>
 	<file>JY-1-C9-Radio-V1.0.apk</file>
-	<odex></odex>
+	<odex>Pipo.odex</odex>
 	<linktype>web</linktype>
 	<origin>https://github.com/hvdwolf/Joying-RootAssistant/raw/apk/Radio-Mod/6.0.1/Original/</origin>
 	<installpath>/system/app/JY-1-C9-Radio-V1.0</installpath>
