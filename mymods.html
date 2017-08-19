@@ -1,0 +1,121 @@
+<!doctype html>
+<html>
+<head>
+    <title>MyMods extension</title>
+    <META NAME="description" LANG="EN" CONTENT="Joying tooling">
+    <META NAME="keywords" LANG="EN" CONTENT="Joying, Intel, Sofia 3GR, rooting, mods, busybox, SofiaServer, Radio, Viper4Android">
+    <META NAME="description" LANG="NL" CONTENT="Joying Tooling">
+    <META NAME="keywords" LANG="NL" CONTENT="Joying, Intel, Sofia 3GR, rooting, mods, busybox, SofiaServer, Radio, Viper4Android">
+    <META NAME="keywords" LANG="DE" CONTENT="Joying, Intel, Sofia 3GR, rooting, mods, busybox, SofiaServer, Radio, Viper4Android">
+    <META NAME="keywords" LANG="FR" CONTENT="Joying, Intel, Sofia 3GR, rooting, mods, busybox, SofiaServer, Radio, Viper4Android">
+    <META NAME="keywords" LANG="ES" CONTENT="Joying, Intel, Sofia 3GR, rooting, mods, busybox, SofiaServer, Radio, Viper4Android">
+
+    <meta name="author" content="Harry">
+    <meta charset="utf-8">
+    <style  type="text/css"> 
+        body {font-family: Arial, Helvetica, Sans-serif;}
+    </style>
+<link rel="shortcut icon" href="images/favicon.ico" >
+
+<link rel="STYLESHEET" type="text/css" href="css/styles.css">
+
+</head>
+    <body bgcolor="#FFFFF8">
+        <center>
+        <table border="0" width="940"><tr><td>
+            <!-- First  "menu" -->
+           <p class="menu"><a href="https://hvdwolf.github.io/Joying-RootAssistant/">Home</a> &nbsp;&nbsp;&nbsp;<a href="https://github.com/hvdwolf/Joying-RootAssistant/releases">Downloads</a>&nbsp;&nbsp;&nbsp;<a href="manual.html">Manual</a>&nbsp;&nbsp;&nbsp;<a href="rooting.html">Rooting</a>&nbsp;&nbsp;&nbsp;<a href="credits.html">Credits</a> &nbsp;&nbsp;&nbsp;  <a href="https://github.com/hvdwolf/Joying-RootAssistant/">Source code</a></p>
+
+
+            <center><H2>The My Mods extension</H2></center>
+            <p>The "My Mods" extension can be used to install (and/or test) your own mods or distribute your mods to other users.</p>
+            <p>The My Mods option is controlled via an xml file holding one or more apks. The file is called "mymods.xml". It needs to be placed in the root of the sdcard, which is called "INTERNAL" in the Joying file manager and which is the same as "internal memory" or "/storage/emulated". (The "real" SD-cards are called like "/storage_external_sd*".)<br>The Joying Extra Tools apk checks upon startup if the file is available. If it is the "My Mods" pull-down button is activated.</p>
+            <p>Below you will find an explanation of the necessary variables in the xml file. Below that an example of the xml file itself.
+                <table>
+                    <tr valign="top">
+                        <td><b>description</b></td>
+                        <td>Description in the "My Mods" pull down menu</td>
+                    </tr>
+                    <tr valign="top">
+                        <td><b>android</b></td>
+                        <td>The android version; currently 5.1.1, 6.0.1 or universal (apk works on any version).</td>
+                    </tr>
+                    <tr valign="top">
+                        <td><b>rombuilddate&nbsp;&nbsp;&nbsp;&nbsp;</b></td>
+                        <td>The date the ROM was built. NOT the release date. This can be found in the unzipped 5009_60.zip under /system/build.prop.
+				For example: The 6.0.1 07 July ROM mentions: "ro.build.date=2017-06-29 11:43:58 Thursday". This means rombuilddate is 20170629.
+				rombuilddate can also be universal (works on any sub version of the mentioned android version).</td>
+                    </tr>
+                    <tr valign="top">
+                        <td><b>modtype</b></td>
+                        <td>Is it a "radio/videoplayer/musicplayer/bluetooth/sofiaserver/other" mod. This is important. In case of a radio for example,
+			         some automatic checks can be done as they are also done now. Same for the other "known" mods. Only "other" will be dealt with in another way.</td>
+                    </tr>
+                    <tr valign="top">
+                        <td><b>linktype</b></td>
+                        <td>web or file: Web requires in origin something like "http://full_path_to_apk/name_of_apk.apk" (or https://).<br> 
+		File requires something like "/sdcard/full_path_to_apk/name_of_apk.apk".</td>
+                    </tr>
+                    <tr valign="top">
+                        <td><b>origin</b></td>
+                        <td>the location from where the apk should be downloaded or copied, and then installed, like "/sdcard/myFantasticMod/myradiomod.apk", 
+		or http://www.mywebsite.org/myradiomod.apk, or some google drive link like https://drive.google.com/open?id=0B4J4kKZoV78-RXRLam9hc01yMmM (note that such
+		a link is the reason why I need the filename)
+		Pay attention to uppercase/lowercase!!</td>
+                    </tr>
+                    <tr valign="top">
+                        <td><b>installpath</b></td>
+                        <td>Folder location where the apk needs to be pushed to. In case of a "known mod" (radio/videoplayer/musicplayer/bluetooth/sofiaserver), this is actually not necessary</td>
+                    </tr>
+                    <tr valign="top">
+                        <td><b>reboot</b></td>
+                        <td>Is a reboot necessary (yes/no)? If yes, a reboot notification will be displayed with the reboot option behind it. For a "known" mod it will be added anyway.</td>
+                    </tr>
+                </table>
+            </p>
+            <p>Below you see an example of the mymods.xml file. 
+                <ul>
+                    <li>The first entry contains a radiomod that is being installed from the internal sdcard, which is called "INTERNAL" in the Joying file manager and which is the same as "internal memory" or "/storage/emulated". The "real" SD-cards are called like "/storage_external_sd*".</li>
+                    <li>The second entry is the exact same mod but downloaded from a website. In this case my github repository.</li>
+                    <li>The 3rd entry is a BT mod downloaded from Google drive when you share it (note: fake link).</li>
+                </ul>
+                <pre>
+&lt;apk&gt;
+	&lt;description&gt;BlueWhite Radio (from sdcard)&lt;/description&gt;
+	&lt;android&gt;6.0.1&lt;/android&gt;
+	&lt;rombuilddate&gt;universal&lt;/rombuilddate&gt;
+	&lt;modtype&gt;radio&lt;/modtype&gt;
+	&lt;filename&gt;JY-1-C9-Radio-V1.0.apk&lt;/filename&gt;
+	&lt;linktype&gt;file&lt;/linktype&gt;
+	&lt;origin&gt;/sdcard/myradiomod/JY-1-C9-Radio-V1.0.apk&lt;/origin&gt;
+	&lt;installpath&gt;/system/app/JY-1-C9-Radio-V1.0&lt;/installpath&gt;
+	&lt;reboot&gt;yes&lt;/reboot&gt;
+&lt;/apk&gt;
+&lt;apk&gt;
+	&lt;description&gt;BlueWhite Radio (from web)&lt;/description&gt;
+	&lt;android&gt;6.0.1&lt;/android&gt;
+	&lt;rombuilddate&gt;universal&lt;/rombuilddate&gt;
+	&lt;modtype&gt;radio&lt;/modtype&gt;
+	&lt;filename&gt;JY-1-C9-Radio-V1.0.apk&lt;/filename&gt;
+	&lt;linktype&gt;web&lt;/linktype&gt;
+	&lt;origin&gt;https://github.com/hvdwolf/Joying-RootAssistant/raw/apk/Radio-Mod/6.0.1/BLUE_WHITE/JY-1-C9-Radio-V1.0.apk&lt;/origin&gt;
+	&lt;installpath&gt;/system/app/JY-1-C9-Radio-V1.0&lt;/installpath&gt;
+	&lt;reboot&gt;yes&lt;/reboot&gt;
+&lt;/apk&gt;
+&lt;apk&gt;
+	&lt;description&gt;Smaller Treel Bluetooth app (800x480 version)&lt;/description&gt;
+	&lt;android&gt;6.0.1&lt;/android&gt;
+	&lt;rombuilddate&gt;universal&lt;/rombuilddate&gt;
+	&lt;modtype&gt;bluetooth&lt;/modtype&gt;
+	&lt;filename&gt;JY-1-C9-BT-V1.0.apk&lt;/filename&gt;
+	&lt;linktype&gt;web&lt;/linktype&gt;
+	&lt;origin&gt;https://drive.google.com/open?id=0B4J3kKZoV78-RXRLam9hc00yMmM&lt;/origin&gt;
+	&lt;installpath&gt;/system/app/JY-1-C9-BT-V1.0&lt;/installpath&gt;
+	&lt;reboot&gt;yes&lt;/reboot&gt;
+&lt;/apk&gt;
+                </pre>
+            </p>
+        </td></tr></table>
+</center>
+</body>
+</html>
