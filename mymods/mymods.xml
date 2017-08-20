@@ -13,7 +13,7 @@ modtype		- Is it a "radio/videoplayer/musicplayer/bluetooth/sofiaserver/other" m
 linktype	- web or file. web requires in origin something like "http://full_path_to_apk/" (or https://). 
 		file requires something like "/sdcard/full_path_to_apk/".
 filename	- The apk that needs to be installed, for example JY-1-C9-Radio-V1.0.apk  (lowercase/uppercase is important)
-origin		- the location from where the apk should be downloaded or copied, and then installed, like "/sdcard/myFantasticMod/myradiomod.apk", 
+origin		- the location from where the apk should be downloaded or copied, and then installed, like "/myFantasticMod/myradiomod.apk" (root of the internal sdcard), 
 		or http://www.mywebsite.org/myradiomod.apk, or some google drive link like https://drive.google.com/open?id=0B4J4kKZoV78-RXRLam9hc01yMmM (note that such
 		a link is the reason why I need the filename)
 		Pay attention to uppercase/lowercase!! 
@@ -33,7 +33,7 @@ In case of other mod you might need to specify the original yourself.
 	<modtype>radio</modtype>
 	<filename>JY-1-C9-Radio-V1.0.apk</filename>
 	<linktype>file</linktype>
-	<origin>/sdcard/myradiomod/JY-1-C9-Radio-V1.0.apk</origin>
+	<origin>/myradiomod/JY-1-C9-Radio-V1.0.apk</origin>
 	<installpath>/system/app/JY-1-C9-Radio-V1.0</installpath>
 	<reboot>yes</reboot>
 </apk>
