@@ -14,6 +14,7 @@
     <meta charset="utf-8">
     <style  type="text/css"> 
         body {font-family: Arial, Helvetica, Sans-serif;}
+        .tab { text-indent:40px; }
     </style>
 <link rel="shortcut icon" href="images/favicon.ico" >
 
@@ -29,9 +30,9 @@
 
             <center><H2>The My Mods extension</H2></center>
             <p>The "My Mods" extension can be used to install (and/or test) your own mods or distribute your mods to other users.</p>
-            <p>The My Mods option is controlled via an xml file holding one or more apks. The file is called "mymods.xml". It needs to be placed in the root of the sdcard, which is called "INTERNAL" in the Joying file manager and which is the same as "internal memory" or "/storage/emulated". (The "real" SD-cards are called like "/storage_external_sd*".)<br>The Joying Extra Tools apk checks upon startup if the file is available. If it is the "My Mods" pull-down button is activated.</p>
-            <p>Below you will find an explanation of the necessary variables in the xml file. Below that an example of the xml file itself.
-                <table>
+            <p>The My Mods option is controlled via an xml file holding one or more apk sections. The file is called "mymods.xml". It needs to be placed in the root of the sdcard, which is called "INTERNAL" in the Joying file manager and which is the same as "internal memory" or "/storage/emulated". (The "real" SD-cards are called like "/storage_external_sd*".)<br>The Joying Extra Tools apk checks upon startup if the file is available. If it is the "My Mods" pull-down button is activated.</p>
+            <p>Below you will find an explanation of the necessary variables in the xml file.
+                <table style="border: 1px solid black; border-collapse; border-spacing:0.7em;">
                     <tr valign="top">
                         <td><b>description</b></td>
                         <td>Description in the "My Mods" pull down menu</td>
@@ -61,11 +62,11 @@
                         <td>the location from where the apk should be downloaded or copied, and then installed, like "/sdcard/myFantasticMod/myradiomod.apk", 
 		or http://www.mywebsite.org/myradiomod.apk, or some google drive link like https://drive.google.com/open?id=0B4J4kKZoV78-RXRLam9hc01yMmM (note that such
 		a link is the reason why I need the filename)
-		Pay attention to uppercase/lowercase!!</td>
+		Pay attention to uppercase/lowercase!!<br>Only directly downloadable links work. Download services like Mega.nz or yandisk do not work as they require web browser interaction.</td>
                     </tr>
                     <tr valign="top">
                         <td><b>installpath</b></td>
-                        <td>Folder location where the apk needs to be pushed to. In case of a "known mod" (radio/videoplayer/musicplayer/bluetooth/sofiaserver), this is actually not necessary</td>
+                        <td>Folder location where the apk needs to be pushed to. In case of a "known mod" (radio, videoplayer, musicplayer, bluetooth, sofiaserver), this is actually not necessary</td>
                     </tr>
                     <tr valign="top">
                         <td><b>reboot</b></td>
@@ -109,12 +110,28 @@
 	&lt;modtype&gt;bluetooth&lt;/modtype&gt;
 	&lt;filename&gt;JY-1-C9-BT-V1.0.apk&lt;/filename&gt;
 	&lt;linktype&gt;web&lt;/linktype&gt;
-	&lt;origin&gt;https://drive.google.com/open?id=0B4J3kKZoV78-RXRLam9hc00yMmM&lt;/origin&gt;
+	&lt;origin&gt;https://drive.google.com/uc?export=download&amp;amp;id=0B4J3kKZoV78-RXRLam9hc00yMmM&lt;/origin&gt;
 	&lt;installpath&gt;/system/app/JY-1-C9-BT-V1.0&lt;/installpath&gt;
 	&lt;reboot&gt;yes&lt;/reboot&gt;
 &lt;/apk&gt;
                 </pre>
             </p>
+            <hr>
+            <p><b>Note</b>: When sharing from Google drive you have to think of two things. First you will need to get a sharable link for your downloadable apk. This link will look something like:
+            <pre>    https://drive.google.com/open?id=0B4J3kKZoV78-RXRLam9hc00yMmM</pre><i>(Note that the code behind the "id=" is your actual file/apk)</i>.<br><br>This is a webbrowser link and can't be used directly. You need to change the <pre>    https://drive.google.com/open?id=0B4J3kKZoV78-RXRLam9hc00yMmM</pre> 
+            to 
+            <pre>    https://drive.google.com/uc?export=download<b>&amp;</b>id=0B4J3kKZoV78-RXRLam9hc00yMmM</pre>
+            However, as you can't use the <b>&amp;</b> sign in an xml file (or HTML), you need to escape it and change it to <b>&amp;amp;</b><br>
+            So your final string will look like <pre>    https://drive.google.com/uc?export=download<b>&amp;amp;</b>id=0B4J3kKZoV78-RXRLam9hc00yMmM</pre>
+            <i>(And don't forget the <b>;</b> behind &amp;amp;)</i></p>
+            <p>This all sounds (reads) complicated, but if you have done it once, it becomes a piece of cake the next time.</p>
+            <p>As already mentioned above: You can't use a file sharing service like mega.nz or yandisk as they are all webbrowser based services and you can't create a direct downloadable link.</p>
+            <hr>
+            <p><b>Note 2:</b> When sharing from dropbox you also have to make a change to the link. First you have to share your file. This will give you a link like:
+            <pre>    https://www.dropbox.com/s/qq8sh1jzh6sos13/JY-1-C9-Radio-V1.0.apk</pre>
+            Change this link to
+            <pre>    https://dl.dropboxusercontent.com/s/qq8sh1jzh6sos13/JY-1-C9-Radio-V1.0.apk</pre><br>
+            <i>(Personally I totally dislike dropbox. It theoretically gives you 10.000 downloads or 20GB download per day. I shared in the past from dropbox but after 500 or so downloads it totally blocks with bandwidth errors and keeps on blocking the next days. So be aware of this in case a lot of users are going to download your mod(s).)</i></p>
         </td></tr></table>
 </center>
 </body>
