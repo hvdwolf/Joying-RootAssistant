@@ -49,13 +49,35 @@ In case of other mod you might need to specify the original yourself.
 	<reboot>yes</reboot>
 </apk>
 <apk>
+	<description>Krzycho26 Radio mod (Google drive)</description>
+	<android>6.0.1</android>
+	<rombuilddate>universal</rombuilddate>
+	<modtype>radio</modtype>
+	<filename>JY-1-C9-Radio-V1.0.apk</filename>
+	<linktype>web</linktype>
+	<origin>https://drive.google.com/uc?export=download&amp;id=0B4J3kKZoV78-clN3ZVNfcHlEdWM</origin>
+	<installpath>/system/app/JY-1-C9-Radio-V1.0</installpath>
+	<reboot>yes</reboot>
+</apk>
+<apk>
+	<description>Krzycho26 Radio mod (from dropbox)</description>
+	<android>6.0.1</android>
+	<rombuilddate>universal</rombuilddate>
+	<modtype>radio</modtype>
+	<filename>JY-1-C9-Radio-V1.0.apk</filename>
+	<linktype>web</linktype>
+	<origin>https://dl.dropboxusercontent.com/s/qq8sh1jzh6sos13/JY-1-C9-Radio-V1.0.apk</origin>
+	<installpath>/system/app/JY-1-C9-Radio-V1.0</installpath>
+	<reboot>yes</reboot>
+</apk>
+<apk>
 	<description>Smaller Treel Bluetooth app (800x480 version)</description>
 	<android>6.0.1</android>
 	<rombuilddate>universal</rombuilddate>
 	<modtype>bluetooth</modtype>
 	<filename>JY-1-C9-BT-V1.0.apk</filename>
 	<linktype>web</linktype>
-	<origin>https://drive.google.com/open?id=0B4J3kKZoV78-RXRLam9hc00yMmM</origin>
+	<origin>https://drive.google.com/uc?export=download&amp;id=0B4J3kKZoV78-RXRLam9hc00yMmM</origin>
 	<installpath>/system/app/JY-1-C9-BT-V1.0</installpath>
 	<reboot>yes</reboot>
 </apk>
