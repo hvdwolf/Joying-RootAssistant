@@ -21,8 +21,8 @@ tdhead (font-style: strong;);
 /* table, simple_table { border-collapse: collapse; } */
 /* table, th, td { border: 1px solid black; vertical-align: top;} */
 table, th, td { vertical-align: top;}
-menu {font-family: Arial, Helvetica, sans-serif; font-size: 200%; text-align: center; }
-.menu {font-family: Arial, Helvetica, sans-serif; font-size: 200%; text-align: center; }
+menu {font-family: Arial, Helvetica, sans-serif; font-size: 175%; text-align: center; }
+.menu {font-family: Arial, Helvetica, sans-serif; font-size: 175%; text-align: center; }
 
 .plain-text { font-family: monospace; color: #000}
 	
