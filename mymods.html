@@ -30,7 +30,9 @@
 
             <center><H2>The My Mods extension</H2></center>
             <p>The "My Mods" extension can be used to install (and/or test) your own mods or distribute your mods to other users.</p>
-            <p>The My Mods option is controlled via an xml file holding one or more apk sections. The file is called "mymods.xml". It needs to be placed in the root of the sdcard, which is called "INTERNAL" in the Joying file manager and which is the same as "internal memory" or "/storage/emulated". (The "real" SD-cards are called like "/storage_external_sd*".)<br>The Joying Extra Tools apk checks upon startup if the file is available. If it is the "My Mods" pull-down button is activated.</p>
+            <p>The My Mods option is controlled via an xml file holding one or more apk sections. The file is called "mymods.xml". It needs to be placed in the root of the sdcard, which is called "INTERNAL" in the Joying file manager and which is the same as "internal memory" or "/storage/emulated". (The "real" SD-cards are called like "/storage_external_sd*".)<br>
+            <a href="images/mymods-fm.jpg"><img src="images/thumb-mymods-fm.jpg"></a><br>
+            The Joying Extra Tools apk checks upon startup if the file is available. If it is the "My Mods" pull-down button is activated.</p>
             <p>Below you will find an explanation of the necessary variables in the xml file.
                 <table style="border: 1px solid black; border-collapse; border-spacing:0.7em;">
                     <tr valign="top">
@@ -55,7 +57,7 @@
                     <tr valign="top">
                         <td><b>linktype</b></td>
                         <td>web or file: Web requires in origin something like "http://full_path_to_apk/name_of_apk.apk" (or https://).<br> 
-		File requires something like "/sdcard/full_path_to_apk/name_of_apk.apk".</td>
+		File requires something like "/full_path_to_apk/name_of_apk.apk". The /full_path... is related from the root of the sdcard, not from the root of the device.</td>
                     </tr>
                     <tr valign="top">
                         <td><b>origin</b></td>
