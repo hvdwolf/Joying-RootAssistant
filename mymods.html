@@ -116,6 +116,7 @@
 	&lt;reboot&gt;yes&lt;/reboot&gt;
 &lt;/apk&gt;
                 </pre>
+            (More examples at the bottom of the page.)
             </p>
             <hr>
             <p><b>Note</b>: When sharing from Google drive you have to think of two things. First you will need to get a sharable link for your downloadable apk. This link will look something like:
@@ -134,6 +135,36 @@
             <i>(Personally I totally dislike dropbox. It theoretically gives you 10.000 downloads or 20GB download per day. I shared in the past from dropbox but after 500 or so downloads it totally blocks with bandwidth errors and keeps on blocking the next days. So be aware of this in case a lot of users are going to download your mod(s).)</i></p>
             <hr>
             <p>As already mentioned above in the xml variables explanation: You can't use a file sharing service like mega.nz or yandisk as they are all webbrowser based services and you simply can't create a direct downloadable link as you are not allowed to.</p>
+            <HR><p><br><br></p>
+                <p><b>More examples</b>:<br>
+            Say you made improvements to the translation of certain settings in the CMSettings apk (because in general the translation to other languages is pretty bad).
+            You need to create the mymods.xml like:
+            <pre>
+&lt;apk&gt;
+	&lt;description&gt;Car Setting app with better translation for English/French/German/Russion (whatever)&lt;/description&gt;
+	&lt;android&gt;6.0.1&lt;/android&gt;
+	&lt;rombuilddate&gt;universal&lt;/rombuilddate&gt;
+	&lt;modtype&gt;other&lt;/modtype&gt;
+	&lt;filename&gt;SYU-2-C9-CMSettings-V1.0.apk&lt;/filename&gt;
+	&lt;linktype&gt;web&lt;/linktype&gt;
+	&lt;origin&gt;http://www.china-rns.com/attachments/joying/20602d1501235423-joying-car-settings-richtig-uebersetzen-syu-2-c9-cmsettings-v1.0.apk&lt;/origin&gt;
+	&lt;installpath&gt;/system/app/SYU-2-C9-CMSettings-V1.0&lt;/installpath&gt;
+	&lt;reboot&gt;yes&lt;/reboot&gt;
+&lt;/apk&gt;
+&lt;apk&gt;
+	&lt;description&gt;Original Joying Car Setting app&lt;/description&gt;
+	&lt;android&gt;6.0.1&lt;/android&gt;
+	&lt;rombuilddate&gt;universal&lt;/rombuilddate&gt;
+	&lt;modtype&gt;other&lt;/modtype&gt;
+	&lt;filename&gt;SYU-2-C9-CMSettings-V1.0.apk&lt;/filename&gt;
+	&lt;linktype&gt;web&lt;/linktype&gt;
+	&lt;origin&gt;https://drive.google.com/uc?export=download&amp;amp;id=0B4J45KZoV78-RXRLam9hc00yMmM&lt;/origin&gt;
+	&lt;installpath&gt;/system/app/SYU-2-C9-CMSettings-V1.0&lt;/installpath&gt;
+	&lt;reboot&gt;yes&lt;/reboot&gt;
+&lt;/apk&gt;
+
+            </pre>
+            </p>
 
         </td></tr></table>
 </center>
