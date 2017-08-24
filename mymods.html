@@ -56,16 +56,17 @@
                     </tr>
                     <tr valign="top">
                         <td><b>linktype</b></td>
-                        <td>web or file: Web requires in origin something like "http://full_path_to_apk/name_of_apk.apk" (or https://).<br> 
-		File requires something like "/full_path_to_apk/name_of_apk.apk". The /full_path... is related from the root of the sdcard, not from the root of the device.</td>
+                        <td>web or file: <ul><li>Web requires in origin something like "http://full_path_to_apk/name_of_apk.apk" (or https://).</li> 
+		<li>File requires something like "/full_path_to_apk/name_of_apk.apk". The /full_path... is related from the root of the sdcard, not from the root of the device.</li></ul></td>
                     </tr>
                     <tr valign="top">
                         <td><b>origin</b></td>
-                        <td>the location from where the apk should be downloaded or copied, and then installed, like "/myFantasticMod/myradiomod.apk", 
-		or http://www.mywebsite.org/myradiomod.apk, or some google drive link like https://drive.google.com/open?id=0B4J4kKZoV78-RXRLam9hc01yMmM (note that such
-		a link is the reason why I need the filename).<br>
-                            <b>NOTE:</b> the "/myFantasticMod/myradiomod.apk" means "from the root of the internal sdcard" in the folder "myFantasticMod" containing the "myradiomod.apk" in the root of the internal sdcard.<br>
-		Pay attention to uppercase/lowercase!!<br>Only directly downloadable links work. Download services like Mega.nz or yandisk do not work as they require web browser interaction.</td>
+                        <td>The location from where the apk should be downloaded or copied, and then installed, like:<ul> <li>"/myFantasticMod/myradiomod.apk"</li>
+                        <li>http://www.mywebsite.org/myradiomod.apk</li>
+		              <li>or some google drive link like https://drive.google.com/uc?export=download&amp;id=0B4J4kKZoV78-RXRLam9hc01yMmM (note that such
+		a link is the reason why I need the filename).</li></ul>
+                            <b>NOTE:</b><ul><li>the "/myFantasticMod/myradiomod.apk" means "from the root of the internal sdcard" in the folder "myFantasticMod" containing the "myradiomod.apk" in the root of the internal sdcard.</li><li>If you want to specify a real, complete path to the file you need to use "file:///mnt/sdcard/myFantasticMod/myradiomod.apk" (That's how it is done in Appinventor)</li></ul>
+		Pay attention to uppercase/lowercase!!<br>In case of a web origin: Only directly downloadable links work. Download services like Mega.nz or Yandisk do not work as they require web browser interaction. Attachments in Forums don't work either in 95% of the cases.</td>
                     </tr>
                     <tr valign="top">
                         <td><b>installpath</b></td>
