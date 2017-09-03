@@ -33,10 +33,17 @@
                 <li>Expand network detection options. It now only looks for wifi. Will check as well for eth0.</li>
                 <li>Add option to mount/unmount SD-cards.</li>
                 <li>(Maybe) Add option to format SD-cards.</li>
+                <!-- <li>Tools &amp; Tweaks menu: Option to unmount the GPS/Map/Navi sdcard and the SD/TF 2nd sdcard (if available)</li> -->
             </ul>
             <p> </p>
         </li>
-       <li>25 August 2017, V 2.1
+       <li>03 September 2017, V 2.2
+            <ul>
+                <li>Improved the "My Mod" option. For type "other" mods it checks the apk name. If it is equal to one of the AllApp.pkg apks, we know the package name which means we can kill the app and remove the odex. This always forces a re-compilation upon reboot.</li>
+            </ul>
+             <p> </p>
+       </li>
+      <li>25 August 2017, V 2.1
             <ul>
                 <li>Made a stupid error in the "enable/disable over WiFi" function. It used root permissions. This is not necessary at all and the permissions are of course not available before rooting. It doesn't matter after rooting of course.(Was carried over from one of the previous versions).</li>
             </ul>
