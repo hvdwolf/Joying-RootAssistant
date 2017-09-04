@@ -37,19 +37,25 @@
             </ul>
             <p> </p>
         </li>
+       <li>04 September 2017, V 2.3
+            <ul>
+                <li>Bugfix: The "My Mods" option loops through the xml file. With only one entry the loop that did not work.</li>
+            </ul>
+             <p> </p>
+       </li>
        <li>03 September 2017, V 2.2
             <ul>
                 <li>Improved the "My Mod" option. For type "other" mods it checks the apk name. If it is equal to one of the AllApp.pkg apks, we know the package name which means we can kill the app and remove the odex. This always forces a re-compilation upon reboot.</li>
             </ul>
              <p> </p>
        </li>
-      <li>25 August 2017, V 2.1
+       <li>25 August 2017, V 2.1
             <ul>
                 <li>Made a stupid error in the "enable/disable over WiFi" function. It used root permissions. This is not necessary at all and the permissions are of course not available before rooting. It doesn't matter after rooting of course.(Was carried over from one of the previous versions).</li>
             </ul>
              <p> </p>
-       </li>
-       <li>24 August 2017, V 2.0
+        </li>
+        <li>24 August 2017, V 2.0
             <ul>
                 <li>Added button with pull down menu "My Mods". This option can be used to install your own mods, or distribute your mods other users. It needs a local xml file (<a href="https://raw.githubusercontent.com/hvdwolf/Joying-RootAssistant/apk/mymods/mymods.xml" target="mymods">example</a>).<br>See an explanation of the functionality on the <a href="https://hvdwolf.github.io/Joying-RootAssistant/mymods.html" target="top">My Mods</a> page.</li>
                 <li>Added a splash screen.</li>
@@ -62,7 +68,7 @@
                 <li>Added a "donate to me" option in the top-left menu (Feel free to ignore :) ). I also added it to the index of the website.</li>
             </ul>
              <p> </p>
-       </li>
+         </li>
          <li>11 August 2017, V 1.6
             <ul>
                 <li>I use the rom build date in the ROMS as marker for installing certain apks (For example: the 07 July release has a zip date of 5 July, but a build date (ro.builddate) of 29 June 2017). Joying publishes their releases via their <a href="https://www.carjoying.com/blog/joying-head-unit-after-sale-support/59.html">Blog</a>. However, it turns out though that they also publish "intermediate" builds when sending their units to customers. We already detected a 15 June 2017 ROM as well. That requires extra "if-then-else" statements to check on these build dates.</li>
@@ -70,7 +76,7 @@
                 <li>Builtin "Sharing" option (top-left menu) so you can easily share your logs (to be further expanded).</li>
             </ul>
              <p> </p>
-       </li>
+        </li>
         <li>03 August 2017, V 1.5
             <ul>
                 <li>In the 1.4 and below options you could only switch on "adb over wifi" as service, meaning till the next reboot. In practice this works clumsy as you sometimes need to reboot multiple times. I switched to persistent now, meaning that it will stay ON through reboots. And if you don't need it: please switch it off.</li>
