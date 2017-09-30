@@ -18,11 +18,13 @@ if [ ! -f /system/bin/install-recovery.sh ]
 then
 	cp -f /system/bin/install-recovery.sh /system/bin/install-recovery.sh.org
 fi
-printf "#!/system/bin/sh\n" > /system/bin/install-recovery.sh
-printf "\n\n" >> /system/bin/install-recovery.sh
-printf "This install-recovery.sh is installed here to start the seSuperuser su binary\n" >> /system/bin/install-recovery.sh
-printf "in daemon mode\n\n" >> /system/bin/install-recovery.sh
-printf "/system/bin/su --daemon &\n" >> /system/bin/install-recovery.sh
+
+# Use single quotes to prevent bash from expanding the #! shebang
+printf '#!/bin/system/sh\n' > /system/bin/install-recovery.sh
+printf '\n\n' >> /system/bin/install-recovery.sh
+printf '# This /system/bin/install-recovery.sh is installed here to start the\n' >> /system/bin/install-recovery.sh
+printf '# seSuperuser su binary in daemon mode\n\n' >> /system/bin/install-recovery.sh
+printf 'su --daemon &\n' >> /system/bin/install-recovery.sh
 chmod 755 /system/bin/install-recovery.sh
 
 
