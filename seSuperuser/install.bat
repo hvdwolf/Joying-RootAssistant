@@ -19,32 +19,32 @@ if "%1"=="" (
 )
 
 REM Setup the connection
-..\win-adb\adb kill-server
-..\win-adb\adb connect %1
+adb kill-server
+adb connect %1
 timeout 3 > NUL
-..\win-adb\adb root
-..\win-adb\adb connect %1
+adb root
+adb connect %1
 timeout 3 > NUL
 
 REM Make the partitions read-writable
-..\win-adb\adb shell mount -o rw,remount /system
+adb shell mount -o rw,remount /system
 
 REM copy necessary files
-..\win-adb\adb shell "mkdir -p /data/seSuperuser"
-..\win-adb\adb push resources/su /data/seSuperuser
-..\win-adb\adb push resources/jy-setup.sh /data/seSuperuser
+adb shell "mkdir -p /data/seSuperuser"
+adb push resources/su /data/seSuperuser
+adb push resources/jy-setup.sh /data/seSuperuser
+adb push Superuser.apk /data/seSuperuser
 
 REM Do the actual installation
-..\win-adb\adb shell chmod 0755 /data/seSuperuser/jy-setup.sh
-..\win-adb\adb shell "cd /data/seSuperuser && sh jy-setup.sh"
+adb shell chmod 0755 /data/seSuperuser/jy-setup.sh
+adb shell "cd /data/seSuperuser && sh jy-setup.sh"
 
 REM Clean up
-..\win-adb\adb shell rm -rf /data/seSuperuser
-..\win-adb\adb shell sync
+adb shell rm -rf /data/seSuperuser
+adb shell sync
 
 echo Reboot your Head Unit NOW!
-echo After the reboot go to the play store and download "phh's SuperUser"
-echo or simply go to https://play.google.com/store/apps/details?id=me.phh.superuser
+
 
 :END
 

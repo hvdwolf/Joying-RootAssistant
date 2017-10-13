@@ -38,6 +38,5 @@ adb shell sync
 #adb shell mount -o ro,remount /system
 
 echo "Reboot your Head Unit NOW!"
-echo 'After the reboot go to the play store and download "phh\'s SuperUser"'
-echo "or simply go to https://play.google.com/store/apps/details?id=me.phh.superuser"
+
 
