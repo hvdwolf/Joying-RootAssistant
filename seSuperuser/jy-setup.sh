@@ -15,7 +15,7 @@ chmod 0775 /system/bin/su
 
 mkdir -p /system/app/Superuser
 chmod 755 /system/app/Superuser
-cp /data/Superuser.apk /system/app/Superuser/Superuser.apk
+cp /data/seSuperuser/Superuser.apk /system/app/Superuser/Superuser.apk
 chmod 644 /system/app/Superuser/Superuser.apk 
 
 # Is there already an install-recovery.sh ?
@@ -23,13 +23,7 @@ if [ ! -e /system/bin/install-recovery.sh ]
 then
 	cp -f /system/bin/install-recovery.sh /system/bin/install-recovery.sh.org
 fi
-
-# Use single quotes to prevent bash from expanding the #! shebang
-printf '#!/bin/system/sh\n' > /system/bin/install-recovery.sh
-printf '\n\n' >> /system/bin/install-recovery.sh
-printf '# This /system/bin/install-recovery.sh is installed here to start the\n' >> /system/bin/install-recovery.sh
-printf '# seSuperuser su binary in daemon mode\n\n' >> /system/bin/install-recovery.sh
-printf '/system/bin/su --daemon &\n' >> /system/bin/install-recovery.sh
+cp /data/seSuperuser/install-recovery.sh /system/bin/install-recovery.sh
 chmod 755 /system/bin/install-recovery.sh
 
 
