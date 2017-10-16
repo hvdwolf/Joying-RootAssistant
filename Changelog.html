@@ -37,7 +37,17 @@
             </ul>
             <p> </p>
         </li>
-       <li>05 October 2017, V 2.5
+       <li>16 October 2017, V 2.6
+            <ul>
+                <li>Sign all apks where the signing was missing from the apk (apksigner verify "some.apk") => Blue-White radio; Wilk7 Radio mod; all 5.1.1 Radiomods; Treels BT mods; Wilk7 video and music mod (BT mod gives error and can't be signed).<br>This should prevent the occurrences that a mod has been installed and upon reboot "nothing" is there even though it was really installed.</li>
+                <li>When pushing the SofiaServer custom keys mod to the unit, including the launcher.sh, the apk checks now whether a launcher.sh is already installed. If so, the launcher.sh will not be replaced.</li>
+                <li>Added lbdroids <a href="https://github.com/lbdroid/JoyingIntelStuff">BluetoothTethering.apk</a>: Used to automatically establish a bluetooth data connection between the car radio and a data source like a cellular phone. Install this on BOTH devices. ("Under button  Other mods")</li>
+                <li>Added lbdroids <a href="https://github.com/lbdroid/FFMpeg-DashCam">Dashcam.apk</a>: "Non-crappy Dashcam for CRAPPY Chinese car radios".</li>
+                <li>In V2.4 I switched to always installing the latest Android AOSP Settings.apk (when chosen). It now turns out that stupid Joying (FYT) also built in dependencies in that one making it firmware version dependent. So now a Android "AOSP" Settings.apk will be installed for the relevant Joying firmware version it is running on.</li>
+                <!-- <li>Added support for <a href="https://github.com/seSuperuser/Superuser">seSuperuser</a>. It is an open source su + Superuser apk.</li> -->
+            </ul>
+            <p> </p>
+       </li>       <li>05 October 2017, V 2.5
             <ul>
                 <li>Add gustdens 01 September SofiaServer mods (Only SofiaServer mods of 25 May and newer are supported in my apk)</li>
             </ul>
