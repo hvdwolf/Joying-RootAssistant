@@ -37,7 +37,21 @@
             </ul>
             <p> </p>
         </li>
-       <li>16 October 2017, V 2.6
+        <li>11 November 2017, V 3.0
+            <ul>
+                <li>busybox update (1.26-2 to 1.27.1)</li>
+                <li>Core Temperature and Frequency measurements (Tools & Tweaks): Reduced measurement frequency from 30 seconds to 10 seconds. This will give an approx. 140 Kb file in a 4 hour drive.</li>
+                <li>Massive internal rewrite of the apk. Also resulted in changes for the jetscript doing the installs on the unit.</li>
+                <li>Removed button "Rooting / Busybox / rsync" as the rooting part was not really useful inside the apk.</li>
+                <li>Positioned the "Tools & Tweaks" button on the location of the removed button.</li>
+                <li>Added "update busybox" and "Install rsync" under the "Tools & Tweaks" button.</li>
+                <li>Removed "Install Viper4Android" entirely.</li>
+                <li>Moved from Appinventor to Thunkable. They are identical but Appinventor supports Android >= 1.6 and Thunkable Android >= 4, thereby producing slightly more optimized code and supporting Material Design. <strong>This means that you have to uninstall the 2.6 version first, otherwise you will have 2 apks.</strong></li>
+                <!-- <li>Added support for <a href="https://github.com/seSuperuser/Superuser">seSuperuser</a>. It is an open source su + Superuser apk.</li> -->
+            </ul>
+            <p> </p>
+        </li>
+        <li>16 October 2017, V 2.6
             <ul>
                 <li>Sign all apks where the signing was missing from the apk (apksigner verify "some.apk") => Blue-White radio; Wilk7 Radio mod; all 5.1.1 Radiomods; Treels BT mods; Wilk7 video and music mod (BT mod gives error and can't be signed).<br>This should prevent the occurrences that a mod has been installed and upon reboot "nothing" is there even though it was really installed.</li>
                 <li>When pushing the SofiaServer custom keys mod to the unit, including the launcher.sh, the apk checks now whether a launcher.sh is already installed. If so, the launcher.sh will not be replaced.</li>
@@ -47,7 +61,8 @@
                 <!-- <li>Added support for <a href="https://github.com/seSuperuser/Superuser">seSuperuser</a>. It is an open source su + Superuser apk.</li> -->
             </ul>
             <p> </p>
-       </li>       <li>05 October 2017, V 2.5
+        </li>
+        <li>05 October 2017, V 2.5
             <ul>
                 <li>Add gustdens 01 September SofiaServer mods (Only SofiaServer mods of 25 May and newer are supported in my apk)</li>
             </ul>
