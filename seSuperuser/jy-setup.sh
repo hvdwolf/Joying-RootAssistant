@@ -10,8 +10,8 @@
 
 # Make backup of original su
 cp -f /system/xbin/su /system/xbin/su.org
-cp -f /data/seSuperuser/su /system/bin/su
-chmod 0775 /system/bin/su
+cp -f /data/seSuperuser/su /system/xbin/su
+chmod 0775 /system/xbin/su
 
 mkdir -p /system/app/Superuser
 chmod 755 /system/app/Superuser

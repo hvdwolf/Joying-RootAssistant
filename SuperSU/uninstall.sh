@@ -19,6 +19,10 @@ adb root
 adb connect $1
 sleep 2
 
+
+#Make sure the original su is available
+adb push su.org /sdcard/su.org
+
 # Make the partitions read-writable
 adb shell mount -o rw,remount /system
 
@@ -32,7 +36,8 @@ adb shell mount -o rw,remount /system
 adb shell "rm /system/bin/app_process"
 adb shell "rm /system/bin/app_process32"
 adb shell "cp /system/bin/app_process32_original /system/bin/app_process32"
-#adb shell "cp /system/bin/app_process_init /system/bin/app_process"
+adb shell "cp /system/bin/app_process_init /system/bin/app_process"
+adb shell "chmod 0755 /system/bin/app_process*"
 
 #/system/lib
 #-rw-r--r--    1 0        0           346536 Oct  5 17:04 libsupol.so
@@ -43,11 +48,14 @@ adb shell "rm -rf /system/lib/libsupol.so"
 #-rwxr-xr-x    1 0        0            46416 Oct  5 17:04 supolicy
 #-rwxr-xr-x    1 0        0           104012 Oct  5 17:04 daemonsu
 adb shell "rm -rf /system/xbin/su"
+#adb shell "cp /system/xbin/su.org  /system/xbin/su"
+adb shell "cp /sdcard/su.org /system/xbin/su"
+adb shell "chmod 0755 /system/xbin/su"
 adb shell "rm -rf /system/xbin/supolicy"
 adb shell "rm -rf /system/xbin/daemonsu"
 
 adb shell "rm -rf /system/bin/install-recovery.sh"
-adb shell "rm -rf /system/xbin/daemonsu"
+adb shell "rm -rf /system/etc/install-recovery.sh"
 
 #/system/app/SuperSU/SuperSU.apk
 adb shell "rm -rf /system/app/SuperSU"
