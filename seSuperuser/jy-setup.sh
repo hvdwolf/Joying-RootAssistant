@@ -19,7 +19,7 @@ cp /data/seSuperuser/Superuser.apk /system/app/Superuser/Superuser.apk
 chmod 644 /system/app/Superuser/Superuser.apk 
 
 # Is there already an install-recovery.sh ?
-if [ ! -e /system/bin/install-recovery.sh ]
+if [ -e /system/bin/install-recovery.sh ]
 then
 	cp -f /system/bin/install-recovery.sh /system/bin/install-recovery.sh.org
 fi
