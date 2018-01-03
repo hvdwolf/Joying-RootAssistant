@@ -9,9 +9,13 @@
 # Version 1.0, 28 September 2017, HvdW
 
 # Make backup of original su
-cp -f /system/xbin/su /system/xbin/su.org
+if [ ! -e /system/xbin/su.org ]
+then
+	cp -f /system/xbin/su /system/xbin/su.org
+fi
 cp -f /data/seSuperuser/su /system/xbin/su
 chmod 0775 /system/xbin/su
+chown 0:0 /system/xbin/su
 
 mkdir -p /system/app/Superuser
 chmod 755 /system/app/Superuser

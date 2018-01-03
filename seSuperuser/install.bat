@@ -31,10 +31,10 @@ adb shell mount -o rw,remount /system
 
 REM copy necessary files
 adb shell "mkdir -p /data/seSuperuser"
-adb push resources/su /data/seSuperuser
-adb push resources/jy-setup.sh /data/seSuperuser
-adb push Superuser.apk /data/seSuperuser
-adb push install-recovery.sh /data/install-recovery.sh
+adb push su /data/seSuperuser/su
+adb push jy-setup.sh /data/seSuperuser/jy-setup.sh
+adb push Superuser.apk /data/seSuperuser/Superuser.apk
+adb push install-recovery.sh /data/seSuperuser/install-recovery.sh
 
 REM Do the actual installation
 adb shell chmod 0755 /data/seSuperuser/jy-setup.sh
