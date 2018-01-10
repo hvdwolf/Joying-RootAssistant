@@ -28,10 +28,9 @@
 
 
         <center><H2>Root your unit</H2></center>
-        <center><H2><p style="color:red">************************************************************************************************<br>
-            Will be replaced by another rooting method to enable Xposed on our Joyings<br>
-            I also removed my "Root your unit zip/script. The uninstaller (for the current one) <br>and new installer will be available soon."
-            ************************************************************************************************</p></H2></center>
+        <center><H3><p style="color:red">****************************************************************************************************************************<br>
+            For regular visitors: I changed to another rooting method as the "new" rooting method allows for the installation of the Xposed framework. I switched from Chainfire's SuperSU to the "Koush / phhusson / lbdroid" Superuser version. If you have SuperSU installed, you should first uninstall it.<br>
+            ****************************************************************************************************************************</p></H3></center>
         
         <p>On Android 6.0.1 this requires 2 steps:
             <ul>
@@ -39,7 +38,7 @@
                 <li>And then you need to do the rooting itself from your pc/laptop.</li>
             </ul>
             On Android 5.1.1 you only need to do the rooting part on the laptop/pc.</p>
-            <p><strong>Note:</strong> If your wireless network has a 2.4GHz and a 5GHz network, make sure  you are on the 2.4GHz. Your unit only works on 2.4GHz and from experience I know that when your pc/laptop is on 5GHz, you often can't connect, or you get a message like "device off-line"</p>
+            <p><strong>Note:</strong> If your wireless network has a 2.4GHz and a 5GHz network, make sure  you are on the 2.4GHz. Your unit only works on 2.4GHz and from experience I know that when your pc/laptop is on 5GHz, you often can't connect, or you get a message like "device off-line" (even though this is technically complete nonsense. Your router should route fine between 2.4GHz and 5GHz.)</p>
         <p><H2>On your head unit</H2>
             <OL>
                 <li>If you do not have it already, you should download my apk from the <a href="https://github.com/hvdwolf/Joying-RootAssistant/releases" target="rooting">Releases</a> page onto your head unit.<br>When you start the apk you will see the following screen:<br><br>
@@ -59,21 +58,21 @@
             <Strong>Linux only:</Strong> First install adb via your package manager (like on Ubuntu/Debian like distributions: "sudo apt-get install adb")<br><br>
             <strong>Steps:</strong>
             <OL>
-                <li>Download the latest SuperSU version from the <a href="https://github.com/hvdwolf/Joying-RootAssistant/releases/tag/20170617-02">Releases</a> page onto your pc/laptop. It will be called something like <strong>SuperSU V x.yz</strong>.</li>
-                <li>Unzip it somewhere on your pc/laptop <strong>and keep the internal folder structure intact</strong>, so not all files in one folder but with sub-folders.</li>
+                <li>Download the Superuser install script from the <a href="https://github.com/hvdwolf/Joying-RootAssistant/releases/tag/20180107">Releases</a> page onto your pc/laptop. It's called <strong>Superuser-Sofia3GR-Intel.zip</strong>. The installation description there is the same as this "On your pc section" that you are currently reading.<br><strong>If you have SuperSU (still) installed, you need to uninstall it first.</strong> See <a href="https://github.com/hvdwolf/Joying-RootAssistant/releases/tag/uninst-20180107">this uninstall description and uninstall script.</a></li>
+                <li>Unzip the Superuser-Sofia3GR-Intel.zip somewhere on your pc/laptop.</li>
                 <UL>
                     <li>On Windows: Run CMD.exe as Administrator.</li>
                     <li>On Linux like OSes: Open a terminal.</li>
                 </UL>
-                <li>Change to the folder where you unzipped the files and change to the folder where the copy_install.sh and copy_install.bat are located.</li>
+                <li>Change to the folder where you unzipped the files and change to the folder where the install.sh and install.bat are located.</li>
                 <UL>
                     <li>On Windows: Run the copy_install.bat script with the IP address of your Head Unit as a parameter: copy_install.bat 192.168.178.50 (for example)</li>
-                    <li>On linux: Run the copy_install.sh script with the IP address of your Head Unit as a parameter: ./copy_install.sh 192.168.178.50 (for example)</li>
+                    <li>On linux: Run the copy_install.sh script with the IP address of your Head Unit as a parameter: ./copy_install.sh 192.168.178.50 (for example)<br>(If necessary please do a "chmod +x install.sh" first if your script is not executable.)</li>
                 </UL>
                 <li>Wait until the script finishes.</li>
                 <li>Reboot your Head Unit.</li>
             </OL></p>
-            <p>You should now have the SuperSU application working with modified SELinux policy settings. This will allow you to give other apps root access as well.</p>
+            <p>You should now have the Superuser application working. This will allow you to give other apps root access as well. It also allows you to use my apk to install several mods and the Xposed framework (Version 33 and up).</p>
         </td></tr></table>
 </center>
 </body>
