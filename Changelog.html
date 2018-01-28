@@ -28,6 +28,23 @@
 
 
     <ul>
+         <li>xy January 2018, V 36
+            <ul>
+                <li>Bugfix: Corrected the "enable/disable adb over tcpip" again. The "adb over tcpip" check upon startup of the app was wrong. It always shows "Disabled" even after you just enabled it (which does function).</li>
+                <li>Added the default Joying SofiaServer apks again for November and December but now with extended navi_app.txt and player_app.txt</li>
+                <li>Added Mark Morto's Radio mod (credits: markmorto)</li>
+                <li>Added first release of SofiaServerCustomKeyMod Xposed module (menu Tools/Tweaks/Xposed). The name will probably change in XSofiamod some time. This one still uses the laucher.sh script from Gustden (replace launcher.sh under SofiaServer menu).
+                    <ul>
+                        <li>Includes the NoKill module.</li>
+                        <li>Does NOT support multi-press (double and triple tap)</li>
+                        <li>Does not yet support the BT/PTT steering wheel key yet (key 27)</li>
+                        <li>Media key supported, but with strange side effect: disables hardware keys for approx 1 minute, then mutes sound and unmutes sound (2-3 seconds), activates hardware keys again.</li>
+                    </ul>
+                </li>
+                <li>Added option to replace the default joying ringtone. This default ringtone is called fyt.ogg. Take your favorite ringtone, convert it to .ogg format and name it fyt.ogg. Copy it onto your internal memory (/sdcard). Then pick the option "Replace Ringtone" from the menu Tools/Tweaks/Xposed.</li>
+            </ul>
+            <p> </p>
+        </li>
          <li>19 January 2018, V 35
             <ul>
                 <li>Bugfix: Corrected the "enable/disable adb over tcpip". I had to rewrite everything after switching rooting method, but I made this also a rooted call which is not necessary and which does not work on a non-rooted unit which is what we start with.</li>
