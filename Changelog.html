@@ -28,7 +28,21 @@
 
 
     <ul>
-         <li>xy January 2018, V 36
+            <li>31 January 2018, V 37
+            <ul>
+                <li>Fix installation of own apk update and Xposed modules from my apk for the Joying Custom ROM. It turned out to be an increased security level coming from the Google package installer compared with the previous old package installer in the stock ROM.</li>
+                <li>Added Mark Morto's Music player mod (credits: markmorto).</li>
+                <li>Changes/enhancements SofiaServerCustomKeyMod Xposed module:
+                    <ul>
+                        <li>Sofiaserver mutes the android channel 4 (alarm) output which is needed for Google Voice feedback. The SofiaServerCustomKyMod Xposed module now prevents that as well.</li>
+                        <li>The BT/PTT steering wheel key (key 27) should now be supported.</li>
+                    </ul>
+                </li>
+            </ul>
+            <p> </p>
+        </li>
+
+         <li>26 January 2018, V 36
             <ul>
                 <li>Bugfix: Corrected the "enable/disable adb over tcpip" again. The "adb over tcpip" check upon startup of the app was wrong. It always shows "Disabled" even after you just enabled it (which does function).</li>
                 <li>Added the default Joying SofiaServer apks again for November and December but now with extended navi_app.txt and player_app.txt</li>
