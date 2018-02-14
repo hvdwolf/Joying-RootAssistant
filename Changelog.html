@@ -28,7 +28,27 @@
 
 
     <ul>
-            <li>04 February 2018, V 39
+            <li>14 February 2018, V 40
+            <ul>
+                <li>Added "Replace boot animation" to Tools/Tweaks/Xposed.</li>
+                <li>Added search bar (on top) in Tools/Tweaks/Xposed as it is getting a long menu list of more than one "page". Type in something like "boot" and it will show "Replace boot animation" and other options that fit the seach criterium.</li>
+                <li>Added search bar (on top) to "Radio mods" and "Other mods" as well (also longer than 1 page).</li>
+                <li>Xposed modules:
+                    <ul>
+                        <li>GPSSpeedFix: patched. It contained a bug in the "GPS bearing" (the direction you are going). I also reduced the average of 5 samples to 3 samples. It seems to be a little less slow.<br>
+                        NOTE: I released a new one on Saturday which contained a big bug. If you installed that one, reinstall now this one.</li>
+                        <li>SofiaServerNoKill (stable): Was already there, but now released as Version 1.</li>
+                        <li>SofiaServerCustomKeyMod (stable): Released as version 1. Development stops here. Fixed the weird behavior of the Media key. This is the "basic copy" of the old Gustden SofiaServer custom keymod, includes the nokill and requires the launcher.sh.</li>
+                        <li>XSofiaTweaker (Experimental): Self containing apk without "outside apk" dependencies, where several aspects of the SofiaServer can be adapted via settings screen(s), like the NoKill, (un)mute channel 4 (GVS voice feedback), reprogrammable hardware keys, ACC_ON/OFF event reprogrammable. If you update a setting, it requires a "soft reboot" from the main Xposed Installer menu (I'm working on that but still learning a lot).</li>
+                    </ul>
+                </li>
+                <li>Added "Enable Bluetooth pincode pairing" (Tools/Tweaks/Xposed menu): This should enable the pairing wih multiple devices. (This should become an entry in the build.prop of the GTX custom rom)</li>
+                <li>APK now makes difference between the Joying stock ROM and the GTX customized stock ROM.</li>
+                <li>Added Mark Mortons corrected and new metallic radio mods.</li>
+                <li>Deutsch Auto Einstellungen apk hinzugefügt (CMSettings)</li>
+            </ul>
+            <p> </p>
+        <li>04 February 2018, V 39
             <ul>
                 <li>Bugfix: I made a typo in build date check for January ROM</li>
             </ul>
