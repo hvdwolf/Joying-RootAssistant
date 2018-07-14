@@ -18,6 +18,10 @@
 <link rel="shortcut icon" href="images/favicon.ico" >
 
 <link rel="STYLESHEET" type="text/css" href="css/styles.css">
+<style>
+    .option-table {border-collapse: collapse; border: 1px solid black;}
+    .oth, .otd {border: 1px solid black;}
+</style>
 
 </head>
 <body bgcolor="#FFFFFD">
@@ -25,43 +29,69 @@
 <table border="0" width="940"><tr><td>
             <!-- First  "menu" -->
            <p class="menu"><a href="https://hvdwolf.github.io/Joying-RootAssistant/">Home</a>&nbsp;&nbsp;&nbsp;<a href="https://github.com/hvdwolf/Joying-RootAssistant/releases">Downloads</a>&nbsp;&nbsp;&nbsp;<a href="manual.html">Manual</a>&nbsp;&nbsp;&nbsp;<a href="rooting.html">Rooting</a>&nbsp;&nbsp;&nbsp;<a href="credits.html">Credits</a>&nbsp;&nbsp;&nbsp;<a href="mymods.html">My Mods</a>&nbsp;&nbsp;&nbsp;<a href="https://github.com/hvdwolf/Joying-RootAssistant/">Source code</a></p>
-
+    </td></tr>
+    <tr><td>
 
     <H1>This site contains:</H1>
     <ul>
-        <li><strong>A script to root your unit</strong></li>
+        <li><strong>Scripts to root your Sofia 3GR Intel unit or your Rockchip PX5-A53 ARM unit.</strong></li>
         <li><strong>An apk to install a number of additional or modded apks</strong></li>
     </ul>
     
-    <p><strong>The rooting script</strong> and the necessary files to root your Sofia 3GR Intel Joying unit can be downloaded from the <a href="https://github.com/hvdwolf/Joying-RootAssistant/releases/tag/20180107" target="rooting">Releases</a> page. It doesn't matter which Intel Joying unit, which resolution or whether you are on a 5.1.1 or a 6.0.1 Android release version.<br>It doesn't even matter whether it is a Joying as long as it is a Sofia 3GR unit.<br>See <a href="https://hvdwolf.github.io/Joying-RootAssistant/rooting.html">this page</a> for a HowTo.</p>
+    <p><strong>Rooting your unit</strong> is described on the <a href="https://hvdwolf.github.io/Joying-RootAssistant/rooting.html">Rooting</a> page. You will find instructions there and the necessary files to root your Sofia Intel or PX5 ARM unit. 
+        <!-- and the necessary files to root your Sofia 3GR Intel Joying unit can be downloaded from the <a href="https://github.com/hvdwolf/Joying-RootAssistant/releases/tag/20180107" target="rooting">Releases</a> page. It doesn't matter which Intel Joying unit, which resolution or whether you are on a 5.1.1 or a 6.0.1 Android release version.<br>It doesn't even matter whether it is a Joying as long as it is a Sofia 3GR unit.<br>See <a href="https://hvdwolf.github.io/Joying-RootAssistant/rooting.html">this page</a> for a HowTo.</p> -->
     <p><br></p>
 
     <p>The <strong>Joying Extra Tools</strong> apk can also be downloaded from that <a href="https://github.com/hvdwolf/Joying-RootAssistant/releases">Releases</a> page.<br>
-    <center><a href="images/mainscreen.jpg"><img src="images/thumb-mainscreen.jpg" border="0"></a></center><br>
+    <center>
+        <table cellpadding="10">
+        <tr>
+            <td valign="top"><a href="images/mainscreen.jpg"><img src="images/thumb-mainscreen.jpg"></a></td>
+            <td valign="top"><a href="images/mods.jpg"><img src="images/thumb-mods.jpg"></a></td>
+        </tr>
+        <tr>
+            <td valign="top"><a href="images/enhance.jpg"><img src="images/thumb-enhance.jpg"></a></td>
+            <td valign="top"><a href="images/other.jpg"><img src="images/thumb-other.jpg"></a></td>
+        </tr>
+    </table>
+    </center><br>
         The Joying Extra Tools apk allows you to:
-    <ul>
-        <li>Enable or disable adb over WiFi</li>
-        <li>Upgrade the binaries of your already rooted unit</li>
-        <li>Update busybox to latest OpenGapps version (currently 1.27-1</li>
-        <li>Install the Xposed framework on your unit (only in combination with Superuser)</li>
-        <li>Install rsync</li>
-        <!-- <li>Install Viper4Android</li> -->
-        <li>Install several Sofia Server mods</li>
-	    <li>Install Joying Settings.apk or Standard Android Settings.apk</li>
-        <li>Install Radio mods (<a href="RadioMods-examples.html">examples</a>)</li>
-        <li>Install other mods like Music Player, Video Player, Bluetooth (<a href="OtherMods-examples.html">examples</a>)</li>
-        <li>(Continuously) measure temperatures and CPU frequencies of your unit</li>
-        <li>Alter the DPI of your unit</li>
-        <li>Expand the hosts file to prevent ads, banners, hijackers, etc. (see <a href="http://winhelp2002.mvps.org/hosts.htm">http://winhelp2002.mvps.org/hosts.htm</a>)</li>
-	    <li>Reboot and "Hot Reboot" options</li>
-        <li>Option to wipe /data to do a "factory defaults" reset.</li>
-        <li>some more stuff to come..</li>
-    </ul>
-    </p>
+    <table class="option-table" cellpadding="10">
+        <tr class="oth"><th align="left">Functionality/Option</th><th align="center">Sofia 3GR Intel</th><th align="center">Rockchip PX5-A53 ARM</th></tr>
+        <tr class="oth"><td>Enable or disable adb over WiFi</td><td align="center"><img src=images/checkmark-16x16.png border=0></td><td align="center"><img src=images/checkmark-16x16.png border=0></td></tr>
+        <tr class="oth"><td>Update busybox to latest OpenGapps version (currently 1.27-1)</td><td align="center"><img src=images/checkmark-16x16.png border=0></td><td align="center"><strong>N.A.</strong></td></tr>
+        <tr class="oth"><td>Install the Xposed framework</td><td align="center"><img src=images/checkmark-16x16.png border=0><sup>(1)</sup></td><td align="center"><strong>Not yet</strong></td></tr>
+        <tr class="oth"><td>Install "main server" mods</td><td align="center"><img src=images/checkmark-16x16.png border=0><sup>(2)</sup></td><td align="center"><img src=images/checkmark-16x16.png border=0><sup>(3)</sup></td></tr>
+        <tr class="oth"><td>Install Viper4Android</td><td align="center"><img src=images/checkmark-16x16-orange.png border=0><sup>(4)</sup></td><td align="center"><img src=images/x-mark-16x16.png border=0><sup>(5)</sup></td></tr>
+        <tr class="oth"><td>Install Joying Settings.apk or Standard Android Settings.apk</td><td align="center"><img src=images/checkmark-16x16.png border=0></td><td align="center"><strong>N.A.</strong></td></tr>
+        <tr class="oth"><td>Install Radio mods (<a href="RadioMods-examples.html">examples</a>)</td><td align="center"><img src=images/checkmark-16x16.png border=0></td><td align="center"><img src="images/checkmark-16x16.png"><sup>(6)</sup></td></tr>
+        <tr class="oth"><td>Install other mods like Music Player, Video Player, Bluetooth (<a href="OtherMods-examples.html">examples</a>)</td><td align="center"><img src=images/checkmark-16x16.png border=0></td><td align="center"><img src="images/checkmark-16x16-orange.png"><sup>(7)</sup></td></tr>
+        <tr class="oth"><td>(Continuously) measure temperatures and CPU frequencies of your unit</td><td align="center"><img src=images/checkmark-16x16.png border=0></td><td align="center"><img src="images/checkmark-16x16.png"></td></tr>
+        <tr class="oth"><td>Alter the DPI of your unit</td><td align="center"><img src=images/checkmark-16x16.png border=0></td><td align="center"><img src="images/checkmark-16x16.png"></td></tr>
+        <tr class="oth"><td>Expand the hosts file to prevent ads, banners, hijackers, etc. (see <a href="http://winhelp2002.mvps.org/hosts.htm">http://winhelp2002.mvps.org/hosts.htm</a>)</td><td align="center"><img src=images/checkmark-16x16.png border=0></td><td align="center"><img src="images/checkmark-16x16.png"></td></tr>
+        <tr class="oth"><td>Reboot and "Hot Reboot" options</td><td align="center"><img src=images/checkmark-16x16.png border=0></td><td align="center"><img src="images/checkmark-16x16.png"></td></tr>
+        <tr class="oth"><td>Option to wipe /data to do a "factory defaults" reset.</td><td align="center"><img src=images/checkmark-16x16.png border=0></td><td align="center"><img src="images/checkmark-16x16.png"></td></tr>
+        <tr class="oth"><td>Option to replace boot animation</td><td align="center"><img src=images/checkmark-16x16.png border=0></td><td align="center"><img src="images/checkmark-16x16.png"></td></tr>
+        <tr class="oth"><td>Option to replace default ringtone (it's not configureable)</td><td align="center"><img src=images/checkmark-16x16.png border=0></td><td align="center"><img src="images/checkmark-16x16.png"></td></tr>
+
+    </table>
+
+    <ol>
+        <!--<li>Install rsync</li> -->
+        <li>Experimental! Can brick your unit! You better use the <a href="https://forum.xda-developers.com/android-auto/android-head-units/rom-gtx-joying-stock-rom-2018-01-29-t3742482" target="gtxaspec">gtxaspec custom ROM</a>.</li>
+        <li>The "main server" apk is called Sofia-1-C9-Server-V1.0.apk on the Intel Sofia units.</li>
+        <li>The "main server" apk is called 000000000_com.syu.ms.apk on the ARM PX5-A53 units.</li>
+        <li>Only on Android 5.1.1. Android 6.0.1 has driver issues.</li>
+        <li>Not yet tested.</li>
+        <li>Currently the radio mods are from the Android 6 Sofia models. As the FYT apks are identical over the units they are exchangeable.</li>
+        <li>These mods are also from the Android 6 Sofia models and should be exchangeable, but they are all slightly older and might have bugs.</li>
+    </ol>
+
     <p>Note that most of the mods are not from me, but made by others.</p>
     <p>The aim is to keep "everything" as updated as possible.</p>
-    <p>The app is created for Joying Intel Sofia 3GR units. Most functionality will probably run just as well on other brand Sofia 3GR units but for the time that is blocked (The app tests whether it is running on a Joying).
-        Some functionality is for both 5.1.1 and 6.0.1. The apk will detect which version and ROM version you are running and will offer, when relevant, the correct options for your android/ROM version.</p>
+    <p>This app was first created for Joying Intel Sofia 3GR units. Most functionality will probably run just as well on other brand Sofia 3GR units but that is blocked (The app tests whether it is running on a Joying).
+    Some functionality is for both 5.1.1 and 6.0.1. The apk will detect which version and ROM version you are running and will offer, when relevant, the correct options for your android/ROM version.<br>
+    Since version 51, the JET apk is also suitable for Joying PX5 FYT models. These models end on either P2, P2D, P4 or P4D. <strong>Joying PX5 models ending on PX??</strong> (where ?? is a combination like 5S) <strong>are incompatible</strong>.<br><br></p>
     <p>See the <a href="Changelog.html">Changelog</a> for updates.</p>
     <p><br></p>
     This program is Open Source and completely free and will remain that way, but you can donate any minimal amount to me to show your appreciation. See the donate button below. Note that my apk also contains work by others.<br> 
@@ -71,7 +101,7 @@
         <input type="image" src="https://www.paypalobjects.com/en_US/GB/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
         <img alt="" border="0" src="https://www.paypalobjects.com/nl_NL/i/scr/pixel.gif" width="1" height="1">
     </form></center>
-    <p>Note also that the rooting scripts make use of Chainfires work. Jorrit "Chainfire" Jongma has <a href="https://www.paypal.com/webapps/shoppingcart?flowlogging_id=28931ffa66f95&mfid=1501776581812_28931ffa66f95#/checkout/openButton" target="chainfire">his own Paypal account</a>.</p>
+
 </td></tr></table>
 </center>
 </body>

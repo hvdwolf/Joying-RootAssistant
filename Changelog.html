@@ -28,7 +28,21 @@
 
 
     <ul>
-           <li>25 April 2018, V 50
+            <li>14 July 2018, V 51
+            <br><strong>This version is a "multi architecture" version. It supports both the Sofia 3GR Intel units as well as the Rockchip PX5-A53 ARM FYT units.</strong><br><br>
+            <ul>
+                <li>Make the JET apk suitable for both Sofia 3GR Intel as well as for Rockchip PX5-A53 ARM units.</li>
+                <li>Completely rewrite user interface to make it more Material design.</li>
+                <li>Enable a TAB bar screen layout like the Play Store app (and others) to simplify and get some distinctionS in the "so many functions per button". Making it a multi-screen app also helped me as I started to run into the limitations of what is possible on one screen.</li>
+                <li>Re-enable status bar and systemui options in every screen. JET was full screen but that is not how a "nice" app should behave (apart from a few apps like nav apps).</li>
+                <li><strong>Completely disable Xposed install</strong> from my JET apk: Use a gtxaspec Custom Rom for that (<a href="https://forum.xda-developers.com/android-auto/android-head-units/rom-gtxfytpx5rom-t3815848" target="PX5">PX5</a> or <a href="https://forum.xda-developers.com/android-auto/android-head-units/rom-gtx-joying-stock-rom-2018-01-29-t3742482" target="Sofia">Sofia</a>, the PX5 custom rom is almost there).</li>
+                <li>Add DPI = 161 to the DPI settings to enable Google Voice forwarding (call someone via Google Voice (needs: the "<a href="https://forum.xda-developers.com/android-auto/android-head-units/app-forward-dial-requests-google-voice-t3685217" target="GVC">GVC CallHandler 4 Joying</a>") and to enable voice feedback (speaking back the search results to you)</li>
+                <li>Enhancement: Replace ringtone and replace bootanimation: Check first for existence of file before trying to replace.</li>
+                <li>Fix lbdroid's BTTether.apk install.</li>
+                <li>lots of changes in the background</li>
+            </ul>
+            <p> </p>
+          <li>25 April 2018, V 50
             <ul>
                 <li>Fix temperature measurement (array out of bounds).</li>
                 <li>Finally fix "first time not found" file error (How could I not see this for so long).</li>
