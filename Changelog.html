@@ -28,6 +28,14 @@
 
 
     <ul>
+          <li>11 August 2018, V 54
+            <br><strong>This version is a "multi architecture" version. It supports both the Sofia 3GR Intel units as well as the Rockchip PX5-A53 ARM FYT units.</strong><br><br>
+              <ul>
+                <li>major bug fixes compared to 52 and 53: Changed a lot of scripts that involve mounting the system partition as read-write. This should be done differently on Android 6.0.1 compared to Android 8.0.0 (silly but true). Changed and removed some redirect statements as well.</li>
+                <li>Bluetooth and Mediaplayer mods did not install correct on Android 8.0.0 (but deprecated anyway as these mods are a bit older).</li>
+                <li>Remove XSofiaTweaker. Replace with <a href="http://repo.xposed.info/module/org.hvdw.xfyttweaker" target="http://repo.xposed.info/module/org.hvdw.xfyttweaker">XFytTweaker</a>. Functionally unchanged, but completely rewritten due to Android 8.0.0. XFytTweaker can be installed from the JET apk and from the Xposed Installer.</li>
+            </ul>
+            <p> </p>
           <li>09 August 2018, V 53
             <br><strong>This version is a "multi architecture" version. It supports both the Sofia 3GR Intel units as well as the Rockchip PX5-A53 ARM FYT units.</strong><br><br>
               <ul>
