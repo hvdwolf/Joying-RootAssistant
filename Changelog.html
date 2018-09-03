@@ -12,7 +12,7 @@
 
     <meta name="author" content="Harry">
     <meta charset="utf-8">
-    <style  type="text/css"> 
+    <style  type="text/css">
         body {font-family: Arial, Helvetica, Sans-serif;}
     </style>
 <link rel="shortcut icon" href="images/favicon.ico" >
@@ -28,7 +28,30 @@
 
 
     <ul>
-          <li>11 August 2018, V 54
+        <li>03 September 2018, V57
+            <br><strong>This version is a "multi architecture" version. It supports both the Sofia 3GR Intel units as well as the Rockchip PX5-A53 ARM FYT units.</strong><br><br>
+              <ul>
+                  <li>bug fix: Wrong header text in Sofia screen in temperature/frequency measurement screen.</li>
+                  <li>Use same theme in all screens: no more "fancy" colors.</li>
+                  <li>Change button layout slightly.</li>
+                  <li>Change (Accept/No way) (full-)screen disclaimer to (alert)dialog.</li>
+                  <li>Add BTMusicStarter apk (Other tab). The BT music is the 2nd intent.category of the BT apk. Many launchers can't start a 2nd intent. This micro apk (18 Kb) does nothing more than starting the BT apk in "BT music mode"</li>
+                  <li>Add extra message to Xposed info screen: "AFTER reboot open the Xposed Installer and select from the top-right menu "Optimize apps now"."</li>
+              </ul>
+        <p> </p>
+        <li>25 August 2018, V56
+            <br><strong>This version is a "multi architecture" version. It supports both the Sofia 3GR Intel units as well as the Rockchip PX5-A53 ARM FYT units.</strong><br><br>
+              <ul>
+                  <li>bug fix: fix in version 55 not complete: global variable not correctly shared. top-left menu in first screen should now work again.</li>
+              </ul>
+        <p> </p>
+        <li>23 August 2018, V55
+            <br><strong>This version is a "multi architecture" version. It supports both the Sofia 3GR Intel units as well as the Rockchip PX5-A53 ARM FYT units.</strong><br><br>
+              <ul>
+                  <li>bug fix: top-left menu in first screen was no longer populated with items</li>
+        </ul>
+        <p> </p>
+          <li>11 August 2018, V54
             <br><strong>This version is a "multi architecture" version. It supports both the Sofia 3GR Intel units as well as the Rockchip PX5-A53 ARM FYT units.</strong><br><br>
               <ul>
                 <li>major bug fixes compared to 52 and 53: Changed a lot of scripts that involve mounting the system partition as read-write. This should be done differently on Android 6.0.1 compared to Android 8.0.0 (silly but true). Changed and removed some redirect statements as well.</li>
@@ -37,14 +60,14 @@
             </ul>
             <br><strong>Note:</strong> The XFytTweaker is functionally unchanged to the XSofiaTweaker. It is just that it is now ready for Android 8.0.0 and for any FYT model, Joying or not. Note that you can't run XSofiaTweaker next to XFytTweaker.
             <p> </p>
-          <li>09 August 2018, V 53
+          <li>09 August 2018, V53
             <br><strong>This version is a "multi architecture" version. It supports both the Sofia 3GR Intel units as well as the Rockchip PX5-A53 ARM FYT units.</strong><br><br>
               <ul>
                 <li>Adapt the logging a bit.</li>
                 <li>Implement more build dates for the several ROM build versions. This is only a quick fix. It requires a better algorithm in the future.</li>
             </ul>
             <p> </p>
-          <li>03 August 2018, V 52
+          <li>03 August 2018, V52
             <br><strong>This version is a "multi architecture" version. It supports both the Sofia 3GR Intel units as well as the Rockchip PX5-A53 ARM FYT units.</strong><br><br>
               <ul>
                 <li>Minor modification temperature monitoring (PX5)</li>
@@ -58,7 +81,7 @@
                 <li>Viper4Android is installable on all versions. It works on 5.1.1. It works on 6.0.1 up to the May 2017 release. It currently does not work on Android 8.0.0 even though it is installed according to (5 the same) instructions. I left it in for others to experiment.</li>
             </ul>
             <p> </p>
-            <li>14 July 2018, V 51
+            <li>14 July 2018, V51
             <br><strong>This version is a "multi architecture" version. It supports both the Sofia 3GR Intel units as well as the Rockchip PX5-A53 ARM FYT units.</strong><br><br>
             <ul>
                 <li>Make the JET apk suitable for both Sofia 3GR Intel as well as for Rockchip PX5-A53 ARM units.</li>
@@ -72,34 +95,34 @@
                 <li>lots of changes in the background</li>
             </ul>
             <p> </p>
-          <li>25 April 2018, V 50
+          <li>25 April 2018, V50
             <ul>
                 <li>Fix temperature measurement (array out of bounds).</li>
                 <li>Finally fix "first time not found" file error (How could I not see this for so long).</li>
             </ul>
             <p> </p>
-           <li>21 April 2018, V 49
+           <li>21 April 2018, V49
             <ul>
                 <li>Fix incorrect script calls due to changed script folder due to changed package name in the app.thunkable.com development environment.</li>
                 <li>New startup script checks for old package name installs and removes them.</li>
                 <li>(internal) Displayed text no longer internal but in asset file. Easier to maintain.</li>
             </ul>
             <p> </p>
-           <li>16 April 2018, V 48
+           <li>16 April 2018, V48
             <ul>
                 <li>(internal) Optimise reading of properties for determining correct ROM.</li>
                 <li>(internal) First steps in integrating Sofia 3GR and PX5 models (Note: The PX5 part is untested! Note also that you need a rooted unit to make installation of mods work. PX5 Other mods disabled. I'm still thinking of the most efficient way to integrate this).</li>
                 <li>Temperature monitoring screen (menu Tools/Tweaks/Xposed) changed. With PX5 displaying 8 Cpu, 1 GPU and 8 core frequencies the current layout did not suffice anymore.</li>
                 <li>(bugfix) Fix incorrect download path for "Mark Morton Materialish no-frequency single page"</li>
             </ul>
-            <p> </p>        
-           <li>10 April 2018, V 47
+            <p> </p>
+           <li>10 April 2018, V47
             <ul>
                 <li>(bugfix) Fix error in script path allocation (fixes a.o. radio mods, other mods, settings app).</li>
                 <li>Changed separator in the "list all installed packages" from " , " to " => ", which makes it much clearer.</li>
             </ul>
             <p> </p>
-            <li>08 April 2018, V 46
+            <li>08 April 2018, V46
             <ul>
                 <li>Repair dpi setting.</li>
                 <li>Set current DPI on the "Alter DPI" button.</li>
@@ -108,30 +131,30 @@
                 <li>Added Mark Mortons Materialish no-frequency bar Radio mod and matching Bluetooth mod</li>
             </ul>
             <p> </p>
-           <li>17 March 2018, V 45
+           <li>17 March 2018, V45
             <ul>
                 <li>Added Mark Morton Audi A7 red/blue radio mod, red/blue "Orb" radio mod, red/blue Audi A7 Bluetooth mod, red/blue Audi A7 music player mod.</li>
             </ul>
             <p> </p>
-            <li>08 March 2018, V 44
+            <li>08 March 2018, V44
             <ul>
                 <li>Re-enable option to install Joying Settings.apk on GTX ROM.</li>
             </ul>
             <p> </p>
-           <li>27 February 2018, V 43
+           <li>27 February 2018, V43
             <ul>
                 <li>Remove install options XSofiaTweaker, SofiaServerCustomKeyMod and SofiaServerNoKill as they are now on the Gloabal Xposed Module Repository.</li>
                 <li>The apk now detects whether it runs on a standard Joying ROM or the GTX Custom ROM. It offers slightly different options per ROM.</li>
             </ul>
             <p> </p>
-            <li>15 February 2018, V 41 + V42
+            <li>15 February 2018, V41 + V42
             <ul>
                 <li>Bugfix: Android version was not interpreted correctly which led to incorrect radio apps being installed (or not at all).</li>
                 <li>Bugfix: Enabling the GPSSpeedFix install as system app on the GTX rom, broke the install of the other Xposed modules.</li>
                 <li>Multiple bugfixes: The Android version wasn't correctly working on many places.</li>
             </ul>
             <p> </p>
-            <li>14 February 2018, V 40
+            <li>14 February 2018, V40
             <ul>
                 <li>Added "Replace boot animation" to Tools/Tweaks/Xposed.</li>
                 <li>Added search bar (on top) in Tools/Tweaks/Xposed as it is getting a long menu list of more than one "page". Type in something like "boot" and it will show "Replace boot animation" and other options that fit the seach criterium.</li>
@@ -151,12 +174,12 @@
                 <li>Deutsch Auto Einstellungen apk hinzugefügt (CMSettings)</li>
             </ul>
             <p> </p>
-        <li>04 February 2018, V 39
+        <li>04 February 2018, V39
             <ul>
                 <li>Bugfix: I made a typo in build date check for January ROM</li>
             </ul>
             <p> </p>
-            <li>03 February 2018, V 38
+            <li>03 February 2018, V38
             <ul>
                 <li>Added 6 Mark Morto Radio mods: circular blue and red, circular blue and red with right-side stacked radio station buttons, circular blue and red with left-side stacked radio station buttons.</li>
                 <li>Set a big fat EXPERIMENTAL warning for the Xposed framework install. (For some users it still works also on 26 January firmware.)</li>
@@ -164,7 +187,7 @@
             </ul>
             <p> </p>
         </li>
-            <li>31 January 2018, V 37
+            <li>31 January 2018, V37
             <ul>
                 <li>Fix installation of own apk update and Xposed modules from my apk for the Joying Custom ROM. It turned out to be an increased security level coming from the Google package installer compared with the previous old package installer in the stock ROM.</li>
                 <li>Added Mark Morto's Music player mod (credits: markmorto).</li>
@@ -177,7 +200,7 @@
             </ul>
             <p> </p>
         </li>
-         <li>26 January 2018, V 36
+         <li>26 January 2018, V36
             <ul>
                 <li>Bugfix: Corrected the "enable/disable adb over tcpip" again. The "adb over tcpip" check upon startup of the app was wrong. It always shows "Disabled" even after you just enabled it (which does function).</li>
                 <li>Added the default Joying SofiaServer apks again for November and December but now with extended navi_app.txt and player_app.txt</li>
@@ -194,13 +217,13 @@
             </ul>
             <p> </p>
         </li>
-         <li>19 January 2018, V 35
+         <li>19 January 2018, V35
             <ul>
                 <li>Bugfix: Corrected the "enable/disable adb over tcpip". I had to rewrite everything after switching rooting method, but I made this also a rooted call which is not necessary and which does not work on a non-rooted unit which is what we start with.</li>
             </ul>
             <p> </p>
         </li>
-         <li>17 January 2018, V 34
+         <li>17 January 2018, V34
              <p><strong>This version requires another rooting method if you want to use Xposed.</strong> See <a href="https://github.com/hvdwolf/Joying-RootAssistant/releases/tag/20180107">here</a>. Note that Xposed is still experimental. There are happy users and users who got into boot loops needing to reflash their unit!</p>
             <ul>
                 <li>Updated the "enable/disable adb over tcpip". I had removed the reboot, as I restarted the adb services, but it still needs a reboot.</li>
@@ -210,7 +233,7 @@
              <p>Note: Mymods option still not working.</p>
             <p> </p>
         </li>
-         <li>13 January 2018, V 33
+         <li>13 January 2018, V33
              <p><strong>This version requires another rooting method if you want to use Xposed.</strong> See <a href="https://github.com/hvdwolf/Joying-RootAssistant/releases/tag/20180107">here</a>.</p>
             <ul>
                 <li>Added Xposed Framework and Installer to apk (NEEDS ANOTHER ROOTING METHOD!!)</li>
@@ -227,20 +250,20 @@
              <p>Note that you should use EITHER the Sofiaserver Nokill mod OR the Xposed Nokill module. At this moment the Nokill Sofiaserver mod might have the preference as it comes with an extend navigation app and music player list.</p>
             <p> </p>
         </li>
-         <li>27 December 2017, V 3.2
+         <li>27 December 2017, V3.2
             <ul>
                 <li>Bugfix: typo in build date determination. (3.1 being the first untested build, immediately this issue. This is the 2nd untested, but hopefully correctly fixed build. I still don't have my unit back).</li>
             </ul>
             <p> </p>
         </li>
-         <li>26 December 2017, V 3.1
+         <li>26 December 2017, V3.1
             <ul>
                 <li>Bugfix: Correct the install of the Settings.apk on the December version.</li>
                 <li>Untested: Gustdens September Sofiaserver mods for December ROM. (I'm again without a head unit at the moment.)</li>
             </ul>
             <p> </p>
         </li>
-         <li>17 December 2017, V 3.0
+         <li>17 December 2017, V3.0
             <ul>
                 <li>Added Joying and Android Settings.apk for November ROM (Credits: lbdroid)</li>
                 <li>Due to lack of November SofiaServer mods, I added the September mods which seem to work fine.</li>
@@ -252,21 +275,21 @@
             </ul>
             <p> </p>
         </li>
-        <li>15 November 2017, V 2.9
+        <li>15 November 2017, V2.9
             <ul>
                 <li>Due to material design the buttons on the "Monitor Temperatures and Frequencies" screen didn't fit anymore.</li>
                 <li>After the rework (2.6 to 2.7) there was a typo in the BTTether.apk install, which therefore failed.</li>
             </ul>
             <p> </p>
         </li>
-        <li>12 November 2017, V 2.8
+        <li>12 November 2017, V2.8
             <ul>
                 <li>Added L. Journets green (Skoda) Radio and Music player. (It came in minutes after the previous release)</li>
                 <li>Again: Moved from Appinventor to Thunkable. They are identical but Appinventor supports Android >= 1.6 and Thunkable Android >= 4, thereby producing slightly more optimized code and supporting Material Design. <strong>This means that if you are still on 2.6 you have to uninstall the 2.6 version (first), otherwise you will have 2 apks</strong> (when opening the apk look at the bottom-right version).</li>
             </ul>
             <p> </p>
         </li>
-        <li>11 November 2017, V 2.7
+        <li>11 November 2017, V2.7
             <ul>
                 <li>busybox update (1.26-2 to 1.27.1)</li>
                 <li>Core Temperature and Frequency measurements (Tools & Tweaks): Reduced measurement frequency from 30 seconds to 10 seconds. This will give an approx. 140 Kb file in a 4 hour drive.</li>
@@ -280,7 +303,7 @@
             </ul>
             <p> </p>
         </li>
-        <li>16 October 2017, V 2.6
+        <li>16 October 2017, V2.6
             <ul>
                 <li>Sign all apks where the signing was missing from the apk (apksigner verify "some.apk") => Blue-White radio; Wilk7 Radio mod; all 5.1.1 Radiomods; Treels BT mods; Wilk7 video and music mod (BT mod gives error and can't be signed).<br>This should prevent the occurrences that a mod has been installed and upon reboot "nothing" is there even though it was really installed.</li>
                 <li>When pushing the SofiaServer custom keys mod to the unit, including the launcher.sh, the apk checks now whether a launcher.sh is already installed. If so, the launcher.sh will not be replaced.</li>
@@ -291,13 +314,13 @@
             </ul>
             <p> </p>
         </li>
-        <li>05 October 2017, V 2.5
+        <li>05 October 2017, V2.5
             <ul>
                 <li>Add gustdens 01 September SofiaServer mods (Only SofiaServer mods of 25 May and newer are supported in my apk)</li>
             </ul>
             <p> </p>
        </li>
-       <li>30 September 2017, V 2.4
+       <li>30 September 2017, V2.4
             <ul>
                 <li>Fixed annoying useless white popup (forgotten test option) in the "Monitor core temperatures and frequencies" screen (Tools & Tweaks button)</li>
                 <li>Add SofiaServer No-Kill Steering wheel mod for 07 July ROM (credits: DBestman). The 07 July version as such supports both the old as new internal amp Joyings.</li>
@@ -306,29 +329,29 @@
             </ul>
              <p> </p>
        </li>
-        <li>04 September 2017, V 2.3
+        <li>04 September 2017, V2.3
             <ul>
                 <li>Bugfix: The "My Mods" option loops through the xml file. With only one entry in the file that did not work.</li>
             </ul>
              <p> </p>
        </li>
-       <li>03 September 2017, V 2.2
+       <li>03 September 2017, V2.2
             <ul>
                 <li>Improved the "My Mod" option. For type "other" mods it checks the apk name. If it is equal to one of the AllApp.pkg apks, we know the package name which means we can kill the app and remove the odex. This always forces a re-compilation upon reboot.</li>
             </ul>
              <p> </p>
        </li>
-       <li>25 August 2017, V 2.1
+       <li>25 August 2017, V2.1
             <ul>
                 <li>Made a stupid error in the "enable/disable over WiFi" function. It used root permissions. This is not necessary at all and the permissions are of course not available before rooting. It doesn't matter after rooting of course.(Was carried over from one of the previous versions).</li>
             </ul>
              <p> </p>
         </li>
-        <li>24 August 2017, V 2.0
+        <li>24 August 2017, V2.0
             <ul>
                 <li>Added button with pull down menu "My Mods". This option can be used to install your own mods, or distribute your mods other users. It needs a local xml file (<a href="https://raw.githubusercontent.com/hvdwolf/Joying-RootAssistant/apk/mymods/mymods.xml" target="mymods">example</a>).<br>See an explanation of the functionality on the <a href="https://hvdwolf.github.io/Joying-RootAssistant/mymods.html" target="top">My Mods</a> page.</li>
                 <li>Added a splash screen.</li>
-                <li>Added another "Sharing" option (top-left menu) so you can easily share your temperature & CPU freq measurement csv files to GDrive/dropbox/mail/whatever.</li>
+                <li>Added another "Sharing" option (top-left menu) so you can easily share your temperature & CPU freq measurement csVfiles to GDrive/dropbox/mail/whatever.</li>
                 <li>Added Krzycho26's "space" radio mod and his "jeans" Bluetooth mod (credits to Krzycho26).</li>
                 <li>Added a "Remove all application logs and csv files" option (top-left menu).</li>
                 <li>Internal: Some rewriting of functions.</li>
@@ -338,7 +361,7 @@
             </ul>
              <p> </p>
          </li>
-         <li>11 August 2017, V 1.6
+         <li>11 August 2017, V1.6
             <ul>
                 <li>I use the rom build date in the ROMS as marker for installing certain apks (For example: the 07 July release has a zip date of 5 July, but a build date (ro.builddate) of 29 June 2017). Joying publishes their releases via their <a href="https://www.carjoying.com/blog/joying-head-unit-after-sale-support/59.html">Blog</a>. However, it turns out though that they also publish "intermediate" builds when sending their units to customers. We already detected a 15 June 2017 ROM as well. That requires extra "if-then-else" statements to check on these build dates.</li>
                 <li>Expanded the Temperature measurements screen. It now meausures temperature and CPU frequencies. And it can still save this every 30 seconds to file. As a direct read of CPU frequencies the way I do it also requires root access, the option has now been removed from the top-left menu and placed behind the "Tools and Tweaks" button.</li>
@@ -346,7 +369,7 @@
             </ul>
              <p> </p>
         </li>
-        <li>03 August 2017, V 1.5
+        <li>03 August 2017, V1.5
             <ul>
                 <li>In the 1.4 and below options you could only switch on "adb over wifi" as service, meaning till the next reboot. In practice this works clumsy as you sometimes need to reboot multiple times. I switched to persistent now, meaning that it will stay ON through reboots. And if you don't need it: please switch it off.</li>
                 <li>Added overscan parameter screen. It does need some "aesthetic improvements" but it functions. Note though that the screen of my app gets "distorted" when you apply new settings. No idea what that is.</li>
@@ -354,7 +377,7 @@
             </ul>
              <p> </p>
         </li>
-        <li>23 July 2017, V 1.3
+        <li>23 July 2017, V1.3
             <ul>
                 <li>This is a slight modification of the 1.2 version.
 There are some (big) differences between the 25 May 6.01 and older 6.0.1 versions, and the 07 July 6.0.1 version for a.o. the Joying BT apk, the Joying Settings.apk and the Joying SofiaServer apk.
@@ -364,7 +387,7 @@ The original SofiaServer and Settings.apk are automatically reinstalled based on
             </ul>
              <p> </p>
        </li>
-        <li>22 July 2017, V 1.2
+        <li>22 July 2017, V1.2
             <ul>
                 <li>Note: SofiaServer binaries still based on 25 May version, but they should function also on 07 July ROM.</li>
                 <li>Added Treel's multi-pairing BT app to replace Joyings crippled, limited apk (5.1.1 and 6.0.1 version)</li>
@@ -377,7 +400,7 @@ The original SofiaServer and Settings.apk are automatically reinstalled based on
             </ul>
             <p> </p>
         </li>
-        <li>06 July 2017, V 1.1
+        <li>06 July 2017, V1.1
             <ul>
                 <li>Add the Radio Mod of Sanangel (Credits: Sanangel)</li>
                 <li>Add the Radio mod of Wilk7 (Credits: Wilk7)</li>
@@ -391,7 +414,7 @@ The original SofiaServer and Settings.apk are automatically reinstalled based on
             </ul>
             <p> </p>
         </li>
-        <li>01 July 2017, V 1.02
+        <li>01 July 2017, V1.02
             <ul>
                 <li>Add warning upon app startup in case of no WiFi (Can't test on 2G/3G/4G dongles).</li>
                 <li>Add option to install either the full, standard Android Settings.apk, or the Joying Settings.apk</li>
@@ -401,7 +424,7 @@ The original SofiaServer and Settings.apk are automatically reinstalled based on
             </ul>
             <p> </p>
         </li>
-        <li>28 June 2017, V 1.01
+        <li>28 June 2017, V1.01
             <ul><li>Try to improve robustness of Radio Mod install, especially on 6.0.1. (Stop Radio app, remove Dalvik cache for Radio, push modded Radio apk)</li>
                 <li>Try to improve robustness of SofiaServer install, especially on 6.0.1. (remove Dalvik cache for SofiaServer, push modded SofiaServer apk)</li>
                 <li>Add standard Joying SofiaServer apk to SofiaServer options (5.1.1 => 28 March version; 6.0.1 => 25 May version) in case the modded version does not work as expected.</li>
