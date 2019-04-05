@@ -5,4 +5,4 @@ go to the [Releases](https://github.com/hvdwolf/Joying-RootAssistant/releases/) 
 
 -----
 This is the old repo which is now empty.
-For the new repo check [JoyingBinRepo][https://github.com/hvdwolf/JoyingBinRepo).
+For the new repo check [JoyingBinRepo](https://github.com/hvdwolf/JoyingBinRepo).
